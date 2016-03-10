@@ -17,6 +17,8 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'build/all.js': [
+                        'coffee/base_presenter.coffee',
+                        'coffee/simple_event_presenter.coffee'
                     ]
                 }
             }
@@ -27,7 +29,7 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-                    'build/home.html': 'jade/home.jade'
+                    'build/simple_event.html': 'jade/simple_event.jade'
                 }
             }
         },

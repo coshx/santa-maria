@@ -1,4 +1,5 @@
 extends ./layout
+include ./_presenter_mixin
 
 block page
   .simple-event
@@ -6,8 +7,10 @@ block page
       Caravel helps you sending events between your Swift backend and your JS layer in a smooth
       and elegant way.
     h1.
-      Press the red button to send an event to the green one.
+      Press the red dot to send an event to the green one.
 
     .playground
-      .receiver
-      .emitter
+      .receiver.js-receiver
+      .emitter.js-emitter
+
+  +presenter('SimpleEvent')

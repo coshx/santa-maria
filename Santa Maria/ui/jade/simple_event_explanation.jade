@@ -1,0 +1,19 @@
+extends ./layout
+
+block page
+  .simple-event-explanation
+    h1.
+      How does it work? We told you. It's easy. Look at this JS code below
+
+    pre
+      code.language-js.
+        Caravel.getDefaultBus().post('AnEvent');
+
+    h1 And then, glance at this Swift code to listen to events:
+
+    pre
+      code.language-swift.
+        Caravel.getDefaultBus().register('AnEvent') { name, data in print("Received an event!") }
+
+
+  +presenter('SimpleEventExplanation')

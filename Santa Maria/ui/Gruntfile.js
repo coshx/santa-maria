@@ -29,7 +29,8 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
-                    'build/simple_event.html': 'jade/simple_event.jade'
+                    'build/simple_event.html': 'jade/simple_event.jade',
+                    'build/simple_event_explanation.html': 'jade/simple_event_explanation.jade'
                 }
             }
         },

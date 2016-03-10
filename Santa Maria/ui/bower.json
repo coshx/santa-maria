@@ -1,0 +1,16 @@
+{
+  "name": "santa-maria",
+  "homepage": "https://github.com/coshx/santa-maria",
+  "authors": [
+    "Adrien Cadet <adrien@coshx.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bourbon": "^4.2.6",
+    "jquery": "^2.2.1"
+  }
+}

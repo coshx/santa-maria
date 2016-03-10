@@ -1,0 +1,23 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "vars";
+
+.main-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  background-color: $white;
+
+  h1 {
+    font: {
+      size: 2rem;
+      weight: normal;
+    }
+    color: $grey;
+  }
+}

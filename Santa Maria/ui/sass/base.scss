@@ -5,6 +5,15 @@ body {
   font-family: -apple-system, SF UI Text, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+*:not(input, textarea) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .main-wrapper {
   position: absolute;
   top: 0;

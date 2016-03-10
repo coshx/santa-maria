@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A719AB3E1C92081200555596 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3D1C92081200555596 /* MainController.swift */; };
-		A719AB401C920B1900555596 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3F1C920B1900555596 /* PageViewController.swift */; };
+		A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3F1C920B1900555596 /* PageViewContentController.swift */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -28,7 +28,7 @@
 		A1076F40D476133367CD42E6 /* Pods-Santa Maria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa Maria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Santa Maria/Pods-Santa Maria.debug.xcconfig"; sourceTree = "<group>"; };
 		A1896A6F575E649446B05B87 /* Pods-Santa Maria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa Maria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Santa Maria/Pods-Santa Maria.release.xcconfig"; sourceTree = "<group>"; };
 		A719AB3D1C92081200555596 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		A719AB3F1C920B1900555596 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A719AB3F1C920B1900555596 /* PageViewContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewContentController.swift; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				A792B2FB1C91E31A001B3BFB /* LaunchScreen.storyboard */,
 				A792B2FE1C91E31A001B3BFB /* Info.plist */,
 				A719AB3D1C92081200555596 /* MainController.swift */,
-				A719AB3F1C920B1900555596 /* PageViewController.swift */,
+				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -128,6 +128,7 @@
 			buildConfigurationList = A792B3011C91E31A001B3BFB /* Build configuration list for PBXNativeTarget "Santa Maria" */;
 			buildPhases = (
 				90110A15E277DCCC7256A582 /* Check Pods Manifest.lock */,
+				A719AB411C920BE600555596 /* Run Script */,
 				A792B2EB1C91E31A001B3BFB /* Sources */,
 				A792B2EC1C91E31A001B3BFB /* Frameworks */,
 				A792B2ED1C91E31A001B3BFB /* Resources */,
@@ -212,6 +213,20 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A719AB411C920BE600555596 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"\n";
+		};
 		CB07FDD92C415FE86D086073 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A719AB401C920B1900555596 /* PageViewController.swift in Sources */,
+				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB3E1C92081200555596 /* MainController.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,
 			);

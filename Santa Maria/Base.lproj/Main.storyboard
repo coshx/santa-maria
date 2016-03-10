@@ -31,15 +31,15 @@
             </objects>
             <point key="canvasLocation" x="881" y="-830"/>
         </scene>
-        <!--View Controller-->
+        <!--Page View Content Controller-->
         <scene sceneID="YgL-vs-dC8">
             <objects>
-                <viewController id="IbX-Il-0Uw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageViewContentController" id="IbX-Il-0Uw" customClass="PageViewContentController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Ll-el-weN"/>
                         <viewControllerLayoutGuide type="bottom" id="z8Y-NR-7v9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QKQ-yc-3X4">
+                    <view key="view" contentMode="scaleToFill" id="QKQ-yc-3X4" customClass="PageContentViewController">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

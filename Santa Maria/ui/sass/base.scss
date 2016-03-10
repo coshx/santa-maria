@@ -1,6 +1,10 @@
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "vars";
 
+body {
+  font-family: -apple-system, SF UI Text, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 .main-wrapper {
   position: absolute;
   top: 0;

@@ -66,4 +66,4 @@ bower_components/
 node_modules/
 .sass-cache
 Psikick\ Sensor\ Demo\ App/Psikick\ Sensor\ Demo\ App/ui/build
-Psikick Sensor Demo App/R.generated.swift
+R.generated.swift

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A719AB3E1C92081200555596 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3D1C92081200555596 /* MainController.swift */; };
 		A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3F1C920B1900555596 /* PageViewContentController.swift */; };
+		A719AB431C92202800555596 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB421C92202800555596 /* R.generated.swift */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -29,6 +30,7 @@
 		A1896A6F575E649446B05B87 /* Pods-Santa Maria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa Maria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Santa Maria/Pods-Santa Maria.release.xcconfig"; sourceTree = "<group>"; };
 		A719AB3D1C92081200555596 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		A719AB3F1C920B1900555596 /* PageViewContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewContentController.swift; sourceTree = "<group>"; };
+		A719AB421C92202800555596 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		A792B2E61C91E31A001B3BFB = {
 			isa = PBXGroup;
 			children = (
+				A719AB421C92202800555596 /* R.generated.swift */,
 				A792B2F11C91E31A001B3BFB /* Santa Maria */,
 				A792B2F01C91E31A001B3BFB /* Products */,
 				2AD93BAA97D7DF45F38CF7FF /* Pods */,
@@ -267,6 +270,7 @@
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB3E1C92081200555596 /* MainController.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,
+				A719AB431C92202800555596 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

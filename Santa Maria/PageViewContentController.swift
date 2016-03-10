@@ -19,13 +19,16 @@ class PageViewContentController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let config = WKWebViewConfiguration()
-        webView = WKWebView(frame: view.frame, configuration: config)
-        webView!.scrollView.bounces = false
-        webView!.scrollView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
-        view.addSubview(webView!)
+        if let i = self.index {
+            let config = WKWebViewConfiguration()
+            let webView = WKWebView(frame: view.frame, configuration: config)
+            webView.scrollView.bounces = false
+            webView.scrollView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+            view.addSubview(webView)
 
-        webView!.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(PageViewContentController.pages[index!], withExtension: "html")!))
+            webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(PageViewContentController.pages[i], withExtension: "html")!))
+            self.webView = webView
+        }
     }
 
     func setIndex(index: Int) {

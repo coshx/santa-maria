@@ -1,0 +1,30 @@
+extends ./layout
+
+block page
+  .event-data
+    h1.
+      Obviously, you can send some data along events.
+      Caravel supports any JSON data.
+
+    .playground
+      .receivers
+        .receiver-wrapper.js-cross-receiver
+          .cross-receiver
+        .receiver-wrapper.js-circle-receiver
+          .circle-receiver
+        .receiver-wrapper.js-triangle-receiver
+          .triangle-receiver
+        .receiver-wrapper.js-square-receiver
+          .square-receiver
+
+      .emitters
+        .emitter-wrapper.js-cross-emitter
+          .cross-emitter
+        .emitter-wrapper.js-circle-emitter
+          .circle-emitter
+        .emitter-wrapper.js-triangle-emitter
+          .triangle-emitter
+        .emitter-wrapper.js-square-emitter
+          .square-emitter
+
+  +presenter('EventData')

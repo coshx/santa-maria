@@ -10,4 +10,4 @@ class BasePresenter
 
   pulse: (e) ->
     e.addClass 'active'
-    setTimeout (() => e.removeClass('active')), 300
+    setTimeout (() => e.removeClass('active')), 500

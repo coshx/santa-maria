@@ -73,11 +73,11 @@ body {
 }
 
 @mixin small-dot($color) {
-  @include dot($color, 25px)
+  @include dot($color, $small-dot)
 }
 
 @mixin medium-dot($color) {
-  @include dot($color, 45px)
+  @include dot($color, $medium-dot)
 }
 
 @mixin fast-dot-transition() {
@@ -85,7 +85,7 @@ body {
 }
 
 @mixin slow-dot-transition() {
-  @include transition(box-shadow 1s ease);
+  @include transition(box-shadow 1s ease 1s);
 }
 
 .receiver {

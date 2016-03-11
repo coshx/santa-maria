@@ -6,12 +6,13 @@ import Caravel
 
 class PageViewContentController: UIViewController {
     private static let pages: [(String, ICaravelPage?)] = [
-        ("landing", nil),
-        ("simple_event", SimpleEventCaravel()),
-        ("simple_event_explanation", nil),
-        ("multiple_subscribers", MultipleSubscribersCaravel()),
-        ("two_buses", TwoBusesCaravel()),
-        ("two_buses_explanation", nil)
+//        ("landing", nil),
+//        ("simple_event", SimpleEventCaravel()),
+//        ("simple_event_explanation", nil),
+//        ("multiple_subscribers", MultipleSubscribersCaravel()),
+//        ("two_buses", TwoBusesCaravel()),
+//        ("two_buses_explanation", nil),
+        ("event_data", EventDataCaravel())
     ]
 
     static var pageNumber: Int {

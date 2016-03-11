@@ -8,7 +8,8 @@ class PageViewContentController: UIViewController {
     private static let pages: [(String, ICaravelPage?)] = [
         ("simple_event", SimpleEventCaravel()),
         ("simple_event_explanation", nil),
-        ("multiple_subscribers", MultipleSubscribersCaravel())
+        ("multiple_subscribers", MultipleSubscribersCaravel()),
+        ("two_buses", TwoBusesCaravel())
     ]
 
     static var pageNumber: Int {
@@ -25,17 +26,23 @@ class PageViewContentController: UIViewController {
             fatalError()
         }
 
+        let tuple = PageViewContentController.pages[i]
+
         let config = WKWebViewConfiguration()
         let draft = Caravel.getDraft(config)
         let webView = WKWebView(frame: view.frame, configuration: config)
         webView.scrollView.bounces = false
         view.addSubview(webView)
 
-        if let caravelPage = PageViewContentController.pages[i].1 {
+        if let caravelPage = tuple.1 {
             caravelPage.setDraft(webView, draft: draft)
+            if tuple.0 == "two_buses" {
+                let draft2 = Caravel.getDraft(config)
+                caravelPage.setDraft(webView, draft: draft2)
+            }
         }
 
-        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(PageViewContentController.pages[i].0, withExtension: "html")!))
+        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(tuple.0, withExtension: "html")!))
         self.webView = webView
     }
 

@@ -79,3 +79,11 @@ body {
 @mixin medium-dot($color) {
   @include dot($color, 45px)
 }
+
+@mixin fast-dot-transition() {
+  @include transition(box-shadow .5s ease);
+}
+
+@mixin slow-dot-transition() {
+  @include transition(box-shadow 2s ease);
+}

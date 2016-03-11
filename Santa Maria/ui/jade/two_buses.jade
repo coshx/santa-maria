@@ -1,0 +1,18 @@
+extends ./layout
+
+block page
+  .two-buses
+    h1.
+      As well than buses.
+
+    .playground
+      .receivers
+        .receiver.js-receiver-1
+        .receiver.js-receiver-2
+
+      .emitters
+        .emitter.js-emitter-1
+        .emitter.js-emitter-2
+
+  +presenter('TwoBuses')
+

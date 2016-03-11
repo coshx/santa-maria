@@ -1,0 +1,19 @@
+.two-buses {
+  @extend ._playground-wrapper;
+
+  .emitters, .receivers {
+    @include align-self(center);
+    @include display(flex);
+    @include justify-content(space-between);
+  }
+
+  .receiver {
+    @include medium-dot($green);
+    @include fast-dot-transition();
+  }
+
+  .emitter {
+    @include medium-dot($red);
+    @include slow-dot-transition();
+  }
+}

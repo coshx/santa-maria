@@ -95,6 +95,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A719AB581C9346A500555596 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				A719AB541C925E5000555596 /* BaseCaravel.swift */,
+				A719AB481C924A9A00555596 /* ICaravelPage.swift */,
+				A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */,
+				A719AB461C924A4500555596 /* SimpleEventCaravel.swift */,
+				A719AB501C92572400555596 /* TwoBusesCaravel.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
 		A75A33201C92063000D66868 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		A792B2F11C91E31A001B3BFB /* Santa Maria */ = {
 			isa = PBXGroup;
 			children = (
+				A719AB581C9346A500555596 /* pages */,
 				A75A33201C92063000D66868 /* ui */,
 				A792B2F21C91E31A001B3BFB /* AppDelegate.swift */,
 				A792B2F61C91E31A001B3BFB /* Main.storyboard */,
@@ -144,11 +157,6 @@
 				A792B2FE1C91E31A001B3BFB /* Info.plist */,
 				A719AB3D1C92081200555596 /* MainController.swift */,
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
-				A719AB461C924A4500555596 /* SimpleEventCaravel.swift */,
-				A719AB481C924A9A00555596 /* ICaravelPage.swift */,
-				A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */,
-				A719AB501C92572400555596 /* TwoBusesCaravel.swift */,
-				A719AB541C925E5000555596 /* BaseCaravel.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";

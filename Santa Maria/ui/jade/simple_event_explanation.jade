@@ -9,16 +9,15 @@ block page
       code.language-js.
         Caravel
           .getDefaultBus()
-          .post('AnEvent');
+          .post("AnEvent");
 
     h1 And then, glance at this Swift code to listen to events:
 
     pre
       code.language-swift.
         Caravel
-          .getDefaultBus()
-          .register('AnEvent') { name, data in
-            print("Received an event!")
-          }
-
-    h1 Caravel relies on a classic event bus pattern.
+          .getDefaultBus(webView, whenReady: { bus in
+              bus.register("AnEvent") { name, data in
+                print("Received an event!")
+              }
+          })

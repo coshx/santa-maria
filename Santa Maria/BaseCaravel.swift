@@ -13,5 +13,6 @@ class BaseCaravel: ICaravelPage {
 
     func viewWillBeRecycled() {
         bus?.unregister()
+        bus = nil
     }
 }

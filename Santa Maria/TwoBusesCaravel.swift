@@ -33,7 +33,9 @@ class TwoBusesCaravel: ICaravelPage {
 
     func viewWillBeRecycled() {
         bus1?.unregister()
+        bus1 = nil
         bus2?.unregister()
+        bus2 = nil
         isFirstTime = true
     }
 }

@@ -7,13 +7,19 @@ block page
 
     pre
       code.language-js.
-        Caravel.getDefaultBus().post('AnEvent');
+        Caravel
+          .getDefaultBus()
+          .post('AnEvent');
 
     h1 And then, glance at this Swift code to listen to events:
 
     pre
       code.language-swift.
-        Caravel.getDefaultBus().register('AnEvent') { name, data in print("Received an event!") }
+        Caravel
+          .getDefaultBus()
+          .register('AnEvent') { name, data in
+            print("Received an event!")
+          }
 
 
   +presenter('SimpleEventExplanation')

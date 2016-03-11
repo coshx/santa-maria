@@ -11,6 +11,7 @@
   "private": true,
   "devDependencies": {
     "bourbon": "^4.2.6",
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "jquery-touch-events": "jQuery-Touch-Events#^1.0.1"
   }
 }

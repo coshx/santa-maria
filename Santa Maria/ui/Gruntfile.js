@@ -35,7 +35,8 @@ module.exports = function (grunt) {
                     'build/simple_event.html': 'jade/simple_event.jade',
                     'build/simple_event_explanation.html': 'jade/simple_event_explanation.jade',
                     'build/multiple_subscribers.html': 'jade/multiple_subscribers.jade',
-                    'build/two_buses.html': 'jade/two_buses.jade'
+                    'build/two_buses.html': 'jade/two_buses.jade',
+                    'build/two_buses_explanation.html': 'jade/two_buses_explanation.jade'
                 }
             }
         },

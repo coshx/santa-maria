@@ -10,7 +10,8 @@ class PageViewContentController: UIViewController {
         ("simple_event", SimpleEventCaravel()),
         ("simple_event_explanation", nil),
         ("multiple_subscribers", MultipleSubscribersCaravel()),
-        ("two_buses", TwoBusesCaravel())
+        ("two_buses", TwoBusesCaravel()),
+        ("two_buses_explanation", nil)
     ]
 
     static var pageNumber: Int {

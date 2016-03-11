@@ -1,0 +1,17 @@
+extends ./layout
+block page
+  .two-buses-explanation
+    h1.
+      You can define buses in both JavaScript and Swift.
+    pre
+      code.language-js.
+        Caravel
+          .get("BoltBus")
+          .post("AnEvent");
+    h1 Any of them uses its own sandbox.
+    pre
+      code.language-swift.
+        Caravel
+          .get("Megabus", webView: webView, whenReady: { bus in
+             bus.post("AnEvent")
+          })

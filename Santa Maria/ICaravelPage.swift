@@ -5,4 +5,6 @@ protocol ICaravelPage {
     func setDraft(webView: WKWebView, draft: EventBus.Draft)
 
     func isMovingToAnotherPage()
+
+    func viewWillBeRecycled()
 }

@@ -1,16 +1,13 @@
 import Caravel
 import WebKit
 
-class MultipleSubscribersCaravel: ICaravelPage {
-    func setDraft(webView: WKWebView, draft: EventBus.Draft) {
+class MultipleSubscribersCaravel: BaseCaravel {
+    override func setDraft(webView: WKWebView, draft: EventBus.Draft) {
         Caravel.get(self, name: "MultipleSubscribers", wkWebView: webView, draft: draft, whenReady: { bus in
+            self.bus = bus
             bus.register("Send") { _, _ in
                 bus.post("Received")
             }
         })
-    }
-
-    func isMovingToAnotherPage() {
-        // Nothing to do
     }
 }

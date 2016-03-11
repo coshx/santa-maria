@@ -18,6 +18,7 @@
 		A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB4E1C92510800555596 /* multiple_subscribers.html */; };
 		A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB501C92572400555596 /* TwoBusesCaravel.swift */; };
 		A719AB531C9257F000555596 /* two_buses.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB521C9257F000555596 /* two_buses.html */; };
+		A719AB551C925E5000555596 /* BaseCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB541C925E5000555596 /* BaseCaravel.swift */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -47,6 +48,7 @@
 		A719AB4E1C92510800555596 /* multiple_subscribers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = multiple_subscribers.html; path = ui/build/multiple_subscribers.html; sourceTree = "<group>"; };
 		A719AB501C92572400555596 /* TwoBusesCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoBusesCaravel.swift; sourceTree = "<group>"; };
 		A719AB521C9257F000555596 /* two_buses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_buses.html; path = ui/build/two_buses.html; sourceTree = "<group>"; };
+		A719AB541C925E5000555596 /* BaseCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCaravel.swift; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				A719AB481C924A9A00555596 /* ICaravelPage.swift */,
 				A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */,
 				A719AB501C92572400555596 /* TwoBusesCaravel.swift */,
+				A719AB541C925E5000555596 /* BaseCaravel.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A719AB551C925E5000555596 /* BaseCaravel.swift in Sources */,
 				A719AB471C924A4500555596 /* SimpleEventCaravel.swift in Sources */,
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,

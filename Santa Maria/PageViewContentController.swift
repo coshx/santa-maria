@@ -54,4 +54,12 @@ class PageViewContentController: UIViewController {
             }
         }
     }
+
+    deinit {
+        if let i = index {
+            if let caravelPage = PageViewContentController.pages[i].1 {
+                caravelPage.viewWillBeRecycled()
+            }
+        }
+    }
 }

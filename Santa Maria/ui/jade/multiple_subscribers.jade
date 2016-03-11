@@ -1,0 +1,16 @@
+extends ./layout
+
+block page
+  .multiple-subscribers
+    h1.
+      Of course, you can declare as many listeners and emitters as you want.
+
+    .playground
+      .receivers
+        .receiver.js-receiver-1
+        .receiver.js-receiver-2
+        .receiver.js-receiver-3
+
+      .emitter.js-emitter
+
+  +presenter('MultipleSubscribers')

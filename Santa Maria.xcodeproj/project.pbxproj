@@ -14,6 +14,8 @@
 		A719AB471C924A4500555596 /* SimpleEventCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB461C924A4500555596 /* SimpleEventCaravel.swift */; };
 		A719AB491C924A9A00555596 /* ICaravelPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB481C924A9A00555596 /* ICaravelPage.swift */; };
 		A719AB4B1C924C1100555596 /* caravel.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A719AB4A1C924C1100555596 /* caravel.min.js */; };
+		A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */; };
+		A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB4E1C92510800555596 /* multiple_subscribers.html */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -39,6 +41,8 @@
 		A719AB461C924A4500555596 /* SimpleEventCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleEventCaravel.swift; sourceTree = "<group>"; };
 		A719AB481C924A9A00555596 /* ICaravelPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICaravelPage.swift; sourceTree = "<group>"; };
 		A719AB4A1C924C1100555596 /* caravel.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = caravel.min.js; path = ui/build/caravel.min.js; sourceTree = "<group>"; };
+		A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleSubscribersCaravel.swift; sourceTree = "<group>"; };
+		A719AB4E1C92510800555596 /* multiple_subscribers.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = multiple_subscribers.html; path = ui/build/multiple_subscribers.html; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				A75A33251C92065400D66868 /* prism.js */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
 				A719AB441C9242F800555596 /* jquery.mobile-events.min.js */,
+				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
 				A75A33271C92065400D66868 /* simple_event.html */,
 			);
 			name = ui;
@@ -131,6 +136,7 @@
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
 				A719AB461C924A4500555596 /* SimpleEventCaravel.swift */,
 				A719AB481C924A9A00555596 /* ICaravelPage.swift */,
+				A719AB4C1C92503B00555596 /* MultipleSubscribersCaravel.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */,
 				A75A33291C92065400D66868 /* all.js in Resources */,
 				A719AB4B1C924C1100555596 /* caravel.min.js in Resources */,
 				A75A332E1C92065400D66868 /* simple_event.html in Resources */,
@@ -285,6 +292,7 @@
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB3E1C92081200555596 /* MainController.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,
+				A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */,
 				A719AB431C92202800555596 /* R.generated.swift in Sources */,
 				A719AB491C924A9A00555596 /* ICaravelPage.swift in Sources */,
 			);

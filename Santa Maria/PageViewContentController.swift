@@ -7,7 +7,8 @@ import Caravel
 class PageViewContentController: UIViewController {
     private static let pages: [(String, ICaravelPage?)] = [
         ("simple_event", SimpleEventCaravel()),
-        ("simple_event_explanation", nil)
+        ("simple_event_explanation", nil),
+        ("multiple_subscribers", MultipleSubscribersCaravel())
     ]
 
     static var pageNumber: Int {

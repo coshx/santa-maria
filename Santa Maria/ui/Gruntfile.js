@@ -31,6 +31,7 @@ module.exports = function (grunt) {
                     pretty: true
                 },
                 files: {
+                    'build/landing.html': 'jade/landing.jade',
                     'build/simple_event.html': 'jade/simple_event.jade',
                     'build/simple_event_explanation.html': 'jade/simple_event_explanation.jade',
                     'build/multiple_subscribers.html': 'jade/multiple_subscribers.jade',

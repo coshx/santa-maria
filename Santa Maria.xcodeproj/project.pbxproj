@@ -19,6 +19,7 @@
 		A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB501C92572400555596 /* TwoBusesCaravel.swift */; };
 		A719AB531C9257F000555596 /* two_buses.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB521C9257F000555596 /* two_buses.html */; };
 		A719AB551C925E5000555596 /* BaseCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB541C925E5000555596 /* BaseCaravel.swift */; };
+		A719AB571C9344DC00555596 /* landing.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB561C9344DC00555596 /* landing.html */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -49,6 +50,7 @@
 		A719AB501C92572400555596 /* TwoBusesCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoBusesCaravel.swift; sourceTree = "<group>"; };
 		A719AB521C9257F000555596 /* two_buses.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_buses.html; path = ui/build/two_buses.html; sourceTree = "<group>"; };
 		A719AB541C925E5000555596 /* BaseCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCaravel.swift; sourceTree = "<group>"; };
+		A719AB561C9344DC00555596 /* landing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = landing.html; path = ui/build/landing.html; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				A75A33211C92065400D66868 /* all.css */,
 				A75A33241C92065400D66868 /* prism.css */,
+				A719AB561C9344DC00555596 /* landing.html */,
 				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
 				A75A33271C92065400D66868 /* simple_event.html */,
@@ -220,6 +223,7 @@
 				A792B2FD1C91E31A001B3BFB /* LaunchScreen.storyboard in Resources */,
 				A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */,
 				A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */,
+				A719AB571C9344DC00555596 /* landing.html in Resources */,
 				A75A332A1C92065400D66868 /* jquery.min.js in Resources */,
 				A75A33281C92065400D66868 /* all.css in Resources */,
 				A75A332C1C92065400D66868 /* prism.js in Resources */,

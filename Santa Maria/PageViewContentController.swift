@@ -6,6 +6,7 @@ import Caravel
 
 class PageViewContentController: UIViewController {
     private static let pages: [(String, ICaravelPage?)] = [
+        ("landing", nil),
         ("simple_event", SimpleEventCaravel()),
         ("simple_event_explanation", nil),
         ("multiple_subscribers", MultipleSubscribersCaravel()),

@@ -1,46 +1,15 @@
 .simple-event {
-  width: 100%;
-  height: 100%;
-  @include display(flex);
-  @include flex-direction(column);
+  @extend ._playground-wrapper;
 
-  .playground {
-    @include flex(1);
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(space-between);
+  .receiver {
+    @include align-self(center);
+    @include medium-dot($green);
+    @include transition(box-shadow .5s ease);
+  }
 
-    .receiver, .emitter {
-      width: 45px;
-      height: 45px;
-      margin: 45px;
-
-      border-radius: 50%;
-      cursor: pointer;
-    }
-
-    .receiver {
-      @include align-self(center);
-
-      background-color: $green;
-      box-shadow: 0 0 0 0px lighten($green, 20%);
-      @include transition(box-shadow .5s ease);
-
-      &.active {
-        box-shadow: 0 0 0 45px lighten($green, 20%);
-      }
-    }
-
-    .emitter {
-      @include align-self(center);
-
-      background-color: $red;
-      box-shadow: 0 0 0 0px lighten($red, 20%);
-      @include transition(box-shadow 2s ease);
-
-      &.active {
-        box-shadow: 0 0 0 45px lighten($red, 20%);
-      }
-    }
+  .emitter {
+    @include align-self(center);
+    @include medium-dot($red);
+    @include transition(box-shadow 2s ease);
   }
 }

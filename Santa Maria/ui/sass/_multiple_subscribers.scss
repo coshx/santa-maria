@@ -1,53 +1,21 @@
 .multiple-subscribers {
-  width: 100%;
-  height: 100%;
-  @include display(flex);
-  @include flex-direction(column);
+  @extend ._playground-wrapper;
 
-  .playground {
-    @include flex(1);
-    @include display(flex);
-    @include flex-direction(column);
-    @include justify-content(space-between);
+  .receivers {
+    @include align-self(center);
+  }
 
-    .receiver, .emitter {
-      border-radius: 50%;
-      cursor: pointer;
-    }
+  .receiver {
+    display: inline-block;
+    vertical-align: middle;
 
-    .receivers {
-      @include align-self(center);
-    }
+    @include small-dot($green);
+    @include transition(box-shadow .5s ease);
+  }
 
-    .receiver {
-      width: 25px;
-      height: 25px;
-      margin: 25px;
-      display: inline-block;
-      vertical-align: middle;
-
-      background-color: $green;
-      box-shadow: 0 0 0 0px lighten($green, 20%);
-      @include transition(box-shadow .5s ease);
-
-      &.active {
-        box-shadow: 0 0 0 25px lighten($green, 20%);
-      }
-    }
-
-    .emitter {
-      width: 45px;
-      height: 45px;
-      margin: 45px;
-      @include align-self(center);
-
-      background-color: $red;
-      box-shadow: 0 0 0 0px lighten($red, 20%);
-      @include transition(box-shadow 2s ease);
-
-      &.active {
-        box-shadow: 0 0 0 45px lighten($red, 20%);
-      }
-    }
+  .emitter {
+    @include align-self(center);
+    @include medium-dot($red);
+    @include transition(box-shadow 2s ease);
   }
 }

@@ -41,3 +41,41 @@ body {
     font-size: 1rem;
   }
 }
+
+._playground-wrapper {
+  width: 100%;
+  height: 100%;
+  @include display(flex);
+  @include flex-direction(column);
+}
+
+.playground {
+  @include flex(1);
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(space-between);
+}
+
+@mixin dot($color, $size) {
+  width: $size;
+  height: $size;
+  margin: $size;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: $color;
+  box-shadow: 0 0 0 0px lighten($color, 20%);
+
+  &.active {
+    box-shadow: 0 0 0 $size lighten($color, 20%);
+  }
+}
+
+@mixin small-dot($color) {
+  @include dot($color, 25px)
+}
+
+@mixin medium-dot($color) {
+  @include dot($color, 45px)
+}

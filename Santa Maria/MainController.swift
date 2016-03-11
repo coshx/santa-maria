@@ -1,19 +1,20 @@
 import UIKit
 
 class MainController: UIViewController, UIPageViewControllerDataSource {
-    private var currentPageIndex = 0
     private var pageViewController: UIPageViewController?
+    private var pageViewContentController: PageViewContentController?
 
-    private func getPage() -> PageViewContentController? {
+    private func getPage(index: Int) -> PageViewContentController? {
         guard let s = storyboard else {
             return nil
         }
 
         guard let pageView = s.instantiateViewControllerWithIdentifier("PageViewContentController") as? PageViewContentController else {
-            return nil
+            fatalError()
         }
 
-        pageView.setIndex(currentPageIndex)
+        pageView.index = index
+
         return pageView
     }
 
@@ -21,18 +22,17 @@ class MainController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
 
         guard let s = storyboard else {
-            return
+            fatalError()
         }
 
         guard let pageViewController = s.instantiateViewControllerWithIdentifier("PageViewController") as? UIPageViewController else {
-            // TODO fatalError
-            return
+            fatalError()
         }
 
         pageViewController.dataSource = self
 
-        guard let page = getPage() else {
-            return
+        guard let page = getPage(0) else {
+            fatalError()
         }
 
         pageViewController.setViewControllers([page], direction: .Forward, animated: false, completion: nil)
@@ -44,20 +44,34 @@ class MainController: UIViewController, UIPageViewControllerDataSource {
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        if currentPageIndex == PageViewContentController.pageNumber - 1 {
+        guard let view = viewController as? PageViewContentController else {
+            fatalError()
+        }
+
+        guard let index = view.index else {
+            fatalError()
+        }
+
+        if index >= PageViewContentController.pageNumber - 1 {
             return nil
         } else {
-            currentPageIndex++
-            return getPage()
+            return getPage(index + 1)
         }
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        if currentPageIndex == 0 {
+        guard let view = viewController as? PageViewContentController else {
+            fatalError()
+        }
+
+        guard let index = view.index else {
+            fatalError()
+        }
+
+        if index <= 0 {
             return nil
         } else {
-            currentPageIndex--
-            return getPage()
+            return getPage(index - 1)
         }
     }
 
@@ -66,6 +80,6 @@ class MainController: UIViewController, UIPageViewControllerDataSource {
     }
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return currentPageIndex
+        return 0
     }
 }

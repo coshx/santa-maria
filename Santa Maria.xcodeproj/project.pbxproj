@@ -10,6 +10,7 @@
 		A719AB3E1C92081200555596 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3D1C92081200555596 /* MainController.swift */; };
 		A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3F1C920B1900555596 /* PageViewContentController.swift */; };
 		A719AB431C92202800555596 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB421C92202800555596 /* R.generated.swift */; };
+		A719AB451C9242F800555596 /* jquery.mobile-events.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A719AB441C9242F800555596 /* jquery.mobile-events.min.js */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -31,6 +32,7 @@
 		A719AB3D1C92081200555596 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		A719AB3F1C920B1900555596 /* PageViewContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewContentController.swift; sourceTree = "<group>"; };
 		A719AB421C92202800555596 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A719AB441C9242F800555596 /* jquery.mobile-events.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery.mobile-events.min.js"; path = "ui/build/jquery.mobile-events.min.js"; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				A75A33241C92065400D66868 /* prism.css */,
 				A75A33251C92065400D66868 /* prism.js */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
+				A719AB441C9242F800555596 /* jquery.mobile-events.min.js */,
 				A75A33271C92065400D66868 /* simple_event.html */,
 			);
 			name = ui;
@@ -195,6 +198,7 @@
 				A75A332C1C92065400D66868 /* prism.js in Resources */,
 				A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */,
 				A75A332B1C92065400D66868 /* prism.css in Resources */,
+				A719AB451C9242F800555596 /* jquery.mobile-events.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

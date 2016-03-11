@@ -6,20 +6,12 @@ class MultipleSubscribersPresenter extends BasePresenter
     @receiver3 = $('.js-receiver-3')
     @emitter = $('.js-emitter')
 
-    @emitter.on 'tapstart', () => @emitter.addClass('active')
+    @addHoldEffect(@emitter)
 
-    @bus.register "Received", () =>
-      @receiver1.addClass 'active'
-      setTimeout (() => @receiver1.removeClass('active')), 300
+    @bus.register "Received", () => @pulse(@receiver1)
 
-    @bus.register "Received", () =>
-      @receiver2.addClass 'active'
-      setTimeout (() => @receiver2.removeClass('active')), 300
+    @bus.register "Received", () => @pulse(@receiver2)
 
-    @bus.register "Received", () =>
-      @receiver3.addClass 'active'
-      setTimeout (() => @receiver3.removeClass('active')), 300
+    @bus.register "Received", () => @pulse(@receiver3)
 
-    @emitter.on 'tapend', () =>
-      @emitter.removeClass('active')
-      @bus.post("Send")
+    @emitter.on 'tapend', () => @bus.post("Send")

@@ -4,12 +4,8 @@ class SimpleEventPresenter extends BasePresenter
     @receiver = $('.js-receiver')
     @emitter = $('.js-emitter')
 
-    @emitter.on 'tapstart', () => @emitter.addClass('active')
+    @addHoldEffect @emitter
 
-    @bus.register "Received", () =>
-      @receiver.addClass 'active'
-      setTimeout (() => @receiver.removeClass('active')), 300
+    @bus.register "Received", () => @pulse(@receiver)
 
-    @emitter.on 'tapend', () =>
-      @emitter.removeClass('active')
-      @bus.post("Send")
+    @emitter.on 'tapend', () => @bus.post("Send")

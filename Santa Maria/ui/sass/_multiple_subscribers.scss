@@ -10,12 +10,10 @@
     vertical-align: middle;
 
     @include small-dot($green);
-    @include transition(box-shadow .5s ease);
   }
 
   .emitter {
     @include align-self(center);
     @include medium-dot($red);
-    @include transition(box-shadow 2s ease);
   }
 }

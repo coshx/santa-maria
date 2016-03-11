@@ -9,11 +9,9 @@
 
   .receiver {
     @include medium-dot($green);
-    @include fast-dot-transition();
   }
 
   .emitter {
     @include medium-dot($red);
-    @include slow-dot-transition();
   }
 }

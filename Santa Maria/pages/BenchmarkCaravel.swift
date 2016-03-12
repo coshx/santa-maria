@@ -162,6 +162,10 @@ class BenchmarkCaravel: BaseCaravel {
 
     override func viewWillBeRecycled() {
         super.viewWillBeRecycled()
+
+        self.initializedBuses = 0
+        self.streamSize = nil
+
         self.noDataBus?.unregister()
         self.noDataBus = nil
         self.stringBus?.unregister()

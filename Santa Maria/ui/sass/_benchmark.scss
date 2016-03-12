@@ -1,0 +1,36 @@
+.benchmark {
+  width: 100%;
+  height: 100%;
+
+  .chart {
+    width: 100%;
+    height: 100%;
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+
+    overflow: hidden;
+
+    .bar {
+      @include flex(1);
+      min-height: 10px;
+      margin: 0 10px;
+
+      background-color: $blue;
+
+      @include transition(height .5s ease, background-color .5s ease);
+
+      &.medium {
+        background-color: $purple;
+      }
+
+      &.high {
+        background-color: $pink;
+      }
+
+      &.extreme {
+        background-color: $yellow;
+      }
+    }
+  }
+}

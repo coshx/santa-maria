@@ -4,7 +4,7 @@ import WebKit
 class BaseCaravel: ICaravelPage {
     var bus: EventBus?
 
-    func setDraft(webView: WKWebView, draft: EventBus.Draft) {
+    func setDraft(webView: WKWebView, draft: EventBus.Draft, config: WKWebViewConfiguration) {
         // To be overridden
     }
 

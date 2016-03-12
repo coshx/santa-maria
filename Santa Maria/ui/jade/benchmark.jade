@@ -1,0 +1,12 @@
+extends ./layout
+
+block page
+  .benchmark
+    .chart
+      .bar.js-no-data-bar
+      .bar.js-string-bar
+      .bar.js-array-bar
+      .bar.js-dictionary-bar
+      .bar.js-complex-bar
+
+  +presenter('Benchmark')

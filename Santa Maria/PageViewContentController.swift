@@ -6,14 +6,15 @@ import Caravel
 
 class PageViewContentController: UIViewController {
     private static let pages: [(String, ICaravelPage?)] = [
-        ("landing", nil),
-        ("simple_event", SimpleEventCaravel()),
-        ("simple_event_explanation", nil),
-        ("two_events", TwoEventsCaravel()),
-        ("multiple_subscribers", MultipleSubscribersCaravel()),
-        ("two_buses", TwoBusesCaravel()),
-        ("two_buses_explanation", nil),
-        ("event_data", EventDataCaravel())
+//        ("landing", nil),
+//        ("simple_event", SimpleEventCaravel()),
+//        ("simple_event_explanation", nil),
+//        ("two_events", TwoEventsCaravel()),
+//        ("multiple_subscribers", MultipleSubscribersCaravel()),
+//        ("two_buses", TwoBusesCaravel()),
+//        ("two_buses_explanation", nil),
+//        ("event_data", EventDataCaravel())
+            ("benchmark", BenchmarkCaravel())
     ]
 
     static var pageNumber: Int {
@@ -39,11 +40,7 @@ class PageViewContentController: UIViewController {
         view.addSubview(webView)
 
         if let caravelPage = tuple.1 {
-            caravelPage.setDraft(webView, draft: draft)
-            if tuple.0 == "two_buses" {
-                let draft2 = Caravel.getDraft(config)
-                caravelPage.setDraft(webView, draft: draft2)
-            }
+            caravelPage.setDraft(webView, draft: draft, config: config)
         }
 
         webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(tuple.0, withExtension: "html")!))

@@ -6,6 +6,11 @@ class SimpleEventPresenter extends BasePresenter
 
     @addHoldEffect @emitter
 
-    @bus.register "Received", () => @pulse(@receiver)
+    @bus.register "Received", () =>
+      console.log(performance.now() - @d1)
+      @pulse(@receiver)
+      @d1 = performance.now()
 
-    @emitter.on 'tapend', () => @bus.post("Send")
+    @emitter.on 'tapend', () =>
+      @d1 = performance.now()
+      @bus.post("Send")

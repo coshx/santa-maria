@@ -22,7 +22,9 @@ module.exports = function (grunt) {
                         'coffee/multiple_subscribers_presenter.coffee',
                         'coffee/two_events_presenter.coffee',
                         'coffee/two_buses_presenter.coffee',
-                        'coffee/event_data_presenter.coffee'
+                        'coffee/event_data_presenter.coffee',
+                        'coffee/benchmark_data.coffee',
+                        'coffee/benchmark_presenter.coffee',
                     ]
                 }
             }
@@ -40,7 +42,8 @@ module.exports = function (grunt) {
                     'build/two_events.html': 'jade/two_events.jade',
                     'build/two_buses.html': 'jade/two_buses.jade',
                     'build/two_buses_explanation.html': 'jade/two_buses_explanation.jade',
-                    'build/event_data.html': 'jade/event_data.jade'
+                    'build/event_data.html': 'jade/event_data.jade',
+                    'build/benchmark.html': 'jade/benchmark.jade'
                 }
             }
         },

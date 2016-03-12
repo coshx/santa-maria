@@ -4,12 +4,16 @@ import WebKit
 class BenchmarkCaravel: BaseCaravel {
     private let noDataRef = NSObject()
     private var noDataBus: EventBus?
+
     private let stringRef = NSObject()
     private var stringBus: EventBus?
+
     private let arrayRef = NSObject()
     private var arrayBus: EventBus?
+
     private let dictionaryRef = NSObject()
     private var dictionaryBus: EventBus?
+
     private let complexRef = NSObject()
     private var complexBus: EventBus?
 

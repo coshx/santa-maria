@@ -9,8 +9,8 @@ class PageViewContentController: UIViewController {
         ("landing", nil),
         ("simple_event", SimpleEventCaravel()),
         ("simple_event_explanation", nil),
-        ("multiple_subscribers", MultipleSubscribersCaravel()),
         ("two_events", TwoEventsCaravel()),
+        ("multiple_subscribers", MultipleSubscribersCaravel()),
         ("two_buses", TwoBusesCaravel()),
         ("two_buses_explanation", nil),
         ("event_data", EventDataCaravel())

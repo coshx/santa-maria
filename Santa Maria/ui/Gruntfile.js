@@ -20,6 +20,7 @@ module.exports = function (grunt) {
                         'coffee/base_presenter.coffee',
                         'coffee/simple_event_presenter.coffee',
                         'coffee/multiple_subscribers_presenter.coffee',
+                        'coffee/two_events_presenter.coffee',
                         'coffee/two_buses_presenter.coffee',
                         'coffee/event_data_presenter.coffee'
                     ]
@@ -36,6 +37,7 @@ module.exports = function (grunt) {
                     'build/simple_event.html': 'jade/simple_event.jade',
                     'build/simple_event_explanation.html': 'jade/simple_event_explanation.jade',
                     'build/multiple_subscribers.html': 'jade/multiple_subscribers.jade',
+                    'build/two_events.html': 'jade/two_events.jade',
                     'build/two_buses.html': 'jade/two_buses.jade',
                     'build/two_buses_explanation.html': 'jade/two_buses_explanation.jade',
                     'build/event_data.html': 'jade/event_data.jade'

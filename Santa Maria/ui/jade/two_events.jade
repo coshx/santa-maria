@@ -1,0 +1,14 @@
+extends ./layout
+
+block page
+  .two-events
+    h1.
+      Send as many events as you like.
+
+    .playground
+      .receivers
+        .receiver.js-receiver-1
+        .receiver.js-receiver-2
+      .emitter.js-emitter
+
+  +presenter('TwoEvents')

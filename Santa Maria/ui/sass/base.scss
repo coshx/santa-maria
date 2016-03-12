@@ -85,7 +85,7 @@ body {
 }
 
 @mixin slow-dot-transition() {
-  @include transition(box-shadow 1s ease 1s);
+  @include transition(box-shadow 1s ease);
 }
 
 .receiver {

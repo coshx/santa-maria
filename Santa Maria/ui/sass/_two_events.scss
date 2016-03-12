@@ -1,0 +1,19 @@
+.two-events {
+  @extend ._playground-wrapper;
+
+  .receivers {
+    @include align-self(center);
+  }
+
+  .receiver {
+    display: inline-block;
+    vertical-align: middle;
+
+    @include medium-dot($green);
+  }
+
+  .emitter {
+    @include align-self(center);
+    @include medium-dot($red);
+  }
+}

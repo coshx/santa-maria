@@ -23,6 +23,8 @@
 		A719AB5A1C9348ED00555596 /* two_buses_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB591C9348ED00555596 /* two_buses_explanation.html */; };
 		A719AB5C1C93513B00555596 /* event_data.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB5B1C93513B00555596 /* event_data.html */; };
 		A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB5D1C93874600555596 /* EventDataCaravel.swift */; };
+		A719AB601C938BE400555596 /* two_events.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB5F1C938BE400555596 /* two_events.html */; };
+		A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB611C93960900555596 /* TwoEventsCaravel.swift */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -57,6 +59,8 @@
 		A719AB591C9348ED00555596 /* two_buses_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_buses_explanation.html; path = ui/build/two_buses_explanation.html; sourceTree = "<group>"; };
 		A719AB5B1C93513B00555596 /* event_data.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = event_data.html; path = ui/build/event_data.html; sourceTree = "<group>"; };
 		A719AB5D1C93874600555596 /* EventDataCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataCaravel.swift; sourceTree = "<group>"; };
+		A719AB5F1C938BE400555596 /* two_events.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_events.html; path = ui/build/two_events.html; sourceTree = "<group>"; };
+		A719AB611C93960900555596 /* TwoEventsCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoEventsCaravel.swift; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				A719AB461C924A4500555596 /* SimpleEventCaravel.swift */,
 				A719AB501C92572400555596 /* TwoBusesCaravel.swift */,
 				A719AB5D1C93874600555596 /* EventDataCaravel.swift */,
+				A719AB611C93960900555596 /* TwoEventsCaravel.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 		A75A33201C92063000D66868 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A719AB5F1C938BE400555596 /* two_events.html */,
 				A719AB5B1C93513B00555596 /* event_data.html */,
 				A719AB591C9348ED00555596 /* two_buses_explanation.html */,
 				A75A33211C92065400D66868 /* all.css */,
@@ -236,6 +242,7 @@
 				A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */,
 				A719AB5C1C93513B00555596 /* event_data.html in Resources */,
 				A75A33291C92065400D66868 /* all.js in Resources */,
+				A719AB601C938BE400555596 /* two_events.html in Resources */,
 				A719AB4B1C924C1100555596 /* caravel.min.js in Resources */,
 				A75A332E1C92065400D66868 /* simple_event.html in Resources */,
 				A792B2FD1C91E31A001B3BFB /* LaunchScreen.storyboard in Resources */,
@@ -327,6 +334,7 @@
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,
 				A719AB3E1C92081200555596 /* MainController.swift in Sources */,
 				A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */,
+				A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,
 				A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */,
 				A719AB431C92202800555596 /* R.generated.swift in Sources */,

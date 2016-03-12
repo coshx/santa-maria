@@ -15,34 +15,28 @@
     }
   }
 
-//  .time-legend {
-//    height: 100%;
-//    padding: 1rem 0;
-//    box-sizing: border-box;
-//
-//    ul {
-//      height: 100%;
-//      @include display(flex);
-//      @include flex-direction(column);
-//      @include justify-content(space-between);
-//
-//      border-right: 1px solid $grey;
-//
-//      li {
-//        font: {
-//          size: .5rem;
-//        }
-//        color: $grey;
-//      }
-//    }
-//  }
+  .time-bar {
+    width: 100%;
+    @include display(flex);
+    @include align-items(center);
 
-//  .chart-wrapper {
-  //    width: 100%;
-  //    height: 90%;
-  //    @include flex(1);
-  //    @include display(flex);
-  //  }
+    p, hr {
+      margin: 5px;
+    }
+
+    p {
+      color: $grey;
+      font-size: .8rem;
+    }
+
+    hr {
+      @include flex(1);
+      height: 0;
+
+      border: 1px solid $grey;
+      outline: none;
+    }
+  }
 
   .chart {
     @include flex(1);

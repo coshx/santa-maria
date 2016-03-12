@@ -1,9 +1,51 @@
 .benchmark {
   width: 100%;
   height: 100%;
+  @include display(flex);
+  @include flex-direction(column);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+//  .time-legend {
+//    height: 100%;
+//    padding: 1rem 0;
+//    box-sizing: border-box;
+//
+//    ul {
+//      height: 100%;
+//      @include display(flex);
+//      @include flex-direction(column);
+//      @include justify-content(space-between);
+//
+//      border-right: 1px solid $grey;
+//
+//      li {
+//        font: {
+//          size: .5rem;
+//        }
+//        color: $grey;
+//      }
+//    }
+//  }
+
+//  .chart-wrapper {
+  //    width: 100%;
+  //    height: 90%;
+  //    @include flex(1);
+  //    @include display(flex);
+  //  }
 
   .chart {
-    width: 100%;
+    @include flex(1);
     height: 100%;
     @include display(flex);
     @include justify-content(space-between);
@@ -30,6 +72,27 @@
 
       &.extreme {
         background-color: $yellow;
+      }
+    }
+  }
+
+  .bar-legend {
+    width: 100%;
+
+    ul {
+      width: 100%;
+      @include display(flex);
+      @include justify-content(space-between);
+      @include align-items(center);
+
+      li {
+        margin: 1rem 2rem;
+
+        @include transform(rotate(45deg));
+        font: {
+          size: .5rem;
+        }
+        color: $grey;
       }
     }
   }

@@ -1,6 +1,6 @@
 PODS:
   - AsyncSwift (1.7.2)
-  - Caravel (1.1.0)
+  - Caravel (1.1.1)
   - Cent (5.0.0):
     - Dollar (~> 5.0.0)
   - Dollar (5.0.0)
@@ -17,7 +17,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
-  Caravel: f04260108efe3697e36267b645ce43340e04f55d
+  Caravel: a17d1b3d653de2c28542bad5cb7820fb6717eb72
   Cent: 4bfbe6037d911c0491425ae1ff8057404050fbb2
   Dollar: 310893dd6b3799b9b155e3deb61a0492987e4d03
   R.swift: 8d8a9f0cb36462d0dff82b70cc2c0396add668fe

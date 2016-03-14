@@ -34,7 +34,8 @@ class PageViewContentController: UIViewController {
 
         let config = WKWebViewConfiguration()
         let draft = Caravel.getDraft(config)
-        let webView = WKWebView(frame: view.frame, configuration: config)
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height - 80)
+        let webView = WKWebView(frame: frame, configuration: config)
         webView.scrollView.bounces = false
         view.addSubview(webView)
 

@@ -25,7 +25,8 @@ class BenchmarkPresenter extends BasePresenter
     updateBar: () ->
       avg = 0
       avg += (e.end - e.start) for e in @watchers
-      h = Math.round((avg / @streamSize) / @maxGraph * 100)
+      avg /= @streamSize
+      h = Math.round(avg / @maxGraph * 100)
       bar = $(@barSelector)
 
       if h < 50
@@ -41,6 +42,7 @@ class BenchmarkPresenter extends BasePresenter
         bar.addClass 'extreme'
 
       bar.css 'height', "#{h}%"
+      bar.find('.js-value').text Math.round(avg)
 
     run: (whenDone) ->
       @whenDone = whenDone

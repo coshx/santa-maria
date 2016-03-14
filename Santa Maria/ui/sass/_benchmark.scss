@@ -49,8 +49,10 @@
 
     .bar {
       @include flex(1);
-      min-height: 10px;
+      min-height: 20px;
       margin: 0 10px;
+      @include display(flex);
+      @include align-items(flex-end);
 
       background-color: $blue;
 
@@ -66,6 +68,19 @@
 
       &.extreme {
         background-color: $yellow;
+      }
+
+      p {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+
+        font: {
+          weight: bold;
+          size: .5rem;
+        }
+        color: $white;
+        text-align: center;
       }
     }
   }

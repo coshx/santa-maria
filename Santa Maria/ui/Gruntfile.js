@@ -36,13 +36,14 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'build/landing.html': 'jade/landing.jade',
-                    'build/simple_event.html': 'jade/simple_event.jade',
-                    'build/simple_event_explanation.html': 'jade/simple_event_explanation.jade',
-                    'build/multiple_subscribers.html': 'jade/multiple_subscribers.jade',
-                    'build/two_events.html': 'jade/two_events.jade',
-                    'build/two_buses.html': 'jade/two_buses.jade',
-                    'build/two_buses_explanation.html': 'jade/two_buses_explanation.jade',
-                    'build/event_data.html': 'jade/event_data.jade',
+                    'build/slideshow_landing.html': 'jade/slideshow/slideshow_landing.jade',
+                    'build/simple_event.html': 'jade/slideshow/simple_event.jade',
+                    'build/simple_event_explanation.html': 'jade/slideshow/simple_event_explanation.jade',
+                    'build/multiple_subscribers.html': 'jade/slideshow/multiple_subscribers.jade',
+                    'build/two_events.html': 'jade/slideshow/two_events.jade',
+                    'build/two_buses.html': 'jade/slideshow/two_buses.jade',
+                    'build/two_buses_explanation.html': 'jade/slideshow/two_buses_explanation.jade',
+                    'build/event_data.html': 'jade/slideshow/event_data.jade',
                     'build/benchmark.html': 'jade/benchmark.jade'
                 }
             }

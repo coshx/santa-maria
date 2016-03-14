@@ -1,8 +1,15 @@
 import UIKit
 
 class SlideshowController: UIViewController, UIPageViewControllerDataSource {
+
+    @IBOutlet weak var navigationBar: UINavigationBar!
+
     private var pageViewController: UIPageViewController?
     private var pageViewContentController: PageViewContentController?
+
+    private var navigationBarHeight: CGFloat {
+        return navigationBar.frame.height
+    }
 
     private func getPage(index: Int) -> PageViewContentController? {
         guard let s = storyboard else {
@@ -36,7 +43,7 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
         }
 
         pageViewController.setViewControllers([page], direction: .Forward, animated: false, completion: nil)
-        pageViewController.view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+        pageViewController.view.frame = CGRect(x: 0, y: navigationBarHeight, width: view.frame.size.width, height: view.frame.size.height - navigationBarHeight)
         addChildViewController(pageViewController)
         view.addSubview(pageViewController.view)
         self.pageViewController = pageViewController
@@ -81,5 +88,9 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
+    }
+
+    @IBAction func onBackClicked(sender: AnyObject) {
+        performSegueWithIdentifier(R.segue.exitSlideshow, sender: self)
     }
 }

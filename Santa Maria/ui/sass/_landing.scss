@@ -1,0 +1,74 @@
+.landing {
+  h1, h2 {
+    text-align: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+      width: 45%;
+    }
+  }
+
+  ._insight {
+    width: 100px;
+    height: 100px;
+
+    border: 1px solid $grey;
+  }
+
+  .slideshow, .duration-benchmark {
+    @extend ._insight;
+  }
+
+  .slideshow {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    @include keyframes(redpulse) {
+      0% {
+        box-shadow: 0 0 0 0 lighten($red, 20%);
+      }
+
+      20% {
+        box-shadow: 0 0 0 ($small-dot / 2) lighten($red, 20%);
+      }
+
+      40%, 100% {
+        box-shadow: 0 0 0 ($small-dot / 2) lighten($red, 100%);
+      }
+    }
+
+    @include keyframes(greenpulse) {
+      0% {
+        box-shadow: 0 0 0 0 lighten($green, 20%);
+      }
+
+      20% {
+        box-shadow: 0 0 0 ($small-dot / 2) lighten($green, 20%);
+      }
+
+      40%, 100% {
+        box-shadow: 0 0 0 ($small-dot / 2) lighten($green, 100%);
+      }
+    }
+
+    .emitter {
+      @include dot($red, $small-dot / 2);
+      @include animation(redpulse 4s ease 4s infinite);
+    }
+
+    .receiver {
+      @include dot($green, $small-dot / 2);
+      @include animation(greenpulse 4s ease 6s infinite);
+    }
+  }
+}

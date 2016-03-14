@@ -37,6 +37,14 @@ body {
     color: $grey;
   }
 
+  h2 {
+    font: {
+      size: 1rem;
+      weight: normal;
+    }
+    color: $grey;
+  }
+
   code {
     font-size: 1rem;
   }

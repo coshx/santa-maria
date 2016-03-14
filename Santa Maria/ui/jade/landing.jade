@@ -2,8 +2,21 @@ extends ./layout
 
 block page
   .landing
-    h1.
-      Welcome to this interactive introduction to Caravel! We are really proud of your interest
-      in our product :)
-    h1.
-      Any screen in this app is made with HTML and JS. No native UI iOS components at all but WKWebView.
+    h1 Santa Maria
+    h2 An interactive demonstration of Caravel
+
+    ul
+      li
+        .slideshow
+          .emitter
+          .receiver
+        h4 Slideshow
+
+      li
+        .duration-benchmark
+          .bar
+          .bar
+          .bar
+        h4 Duration benchmark
+
+  +presenter('Benchmark')

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Slideshow Controller-->
@@ -16,9 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="nS9-xS-WPH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K21-vr-t5S">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="XNx-n4-r7P">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="K9P-0t-8Y0">
+                                            <connections>
+                                                <action selector="onBackClicked:" destination="3VM-gX-OkE" id="MNv-FT-Iaz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="K21-vr-t5S" secondAttribute="trailing" constant="-20" id="AcK-0I-SdV"/>
+                            <constraint firstItem="K21-vr-t5S" firstAttribute="top" secondItem="nS9-xS-WPH" secondAttribute="topMargin" id="DZH-k8-kf9"/>
+                            <constraint firstItem="K21-vr-t5S" firstAttribute="leading" secondItem="nS9-xS-WPH" secondAttribute="leadingMargin" constant="-20" id="ghW-bp-wsD"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="navigationBar" destination="K21-vr-t5S" id="33m-G2-wlK"/>
                         <segue destination="fC9-IK-W1n" kind="unwind" identifier="exitSlideshow" unwindAction="backFromSlideshow:" id="FWC-40-Xnd"/>
                     </connections>
                 </viewController>

@@ -458,7 +458,9 @@
 			baseConfigurationReference = A1076F40D476133367CD42E6 /* Pods-Santa Maria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Santa Maria/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.Santa-Maria";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -470,7 +472,9 @@
 			baseConfigurationReference = A1896A6F575E649446B05B87 /* Pods-Santa Maria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Santa Maria/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.coshx.Santa-Maria";
 				PRODUCT_NAME = "$(TARGET_NAME)";

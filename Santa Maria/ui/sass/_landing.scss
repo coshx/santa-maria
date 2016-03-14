@@ -14,12 +14,22 @@
       padding: 0;
       margin: 0;
       width: 45%;
+
+      h4 {
+        font: {
+          size: .8rem;
+        }
+        text-align: center;
+        color: $grey;
+      }
     }
   }
 
   ._insight {
     width: 100px;
     height: 100px;
+    padding: 0 5px;
+    box-sizing: border-box;
 
     border: 1px solid $grey;
   }
@@ -63,12 +73,84 @@
 
     .emitter {
       @include dot($red, $small-dot / 2);
-      @include animation(redpulse 4s ease 4s infinite);
+      @include animation(redpulse 4s ease 0s infinite);
     }
 
     .receiver {
       @include dot($green, $small-dot / 2);
-      @include animation(greenpulse 4s ease 6s infinite);
+      @include animation(greenpulse 4s ease 2s infinite);
+    }
+  }
+
+  .duration-benchmark {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+
+    .bar {
+      @include flex(1);
+      margin: 0 5px;
+      min-height: 5px;
+
+      @include keyframes(firstbar) {
+        0% {
+          height: 10%;
+        }
+
+        50% {
+          height: 30%;
+        }
+
+        100% {
+          height: 20%;
+        }
+      }
+
+      &:first-child {
+        height: 10%;
+        background-color: $blue;
+        @include animation(firstbar 2s ease 0s infinite alternate);
+      }
+
+      @include keyframes(secondbar) {
+        0% {
+          height: 50%;
+        }
+
+        50% {
+          height: 40%;
+        }
+
+        100% {
+          height: 80%;
+        }
+      }
+
+      &:nth-child(2) {
+        height: 50%;
+        background-color: $purple;
+        @include animation(secondbar 2s ease 1s infinite alternate);
+      }
+
+      @include keyframes(thirdbar) {
+        0% {
+          height: 30%;
+        }
+
+        50% {
+          height: 10%;
+        }
+
+        100% {
+          height: 50%;
+        }
+      }
+
+      &:last-child {
+        height: 30%;
+        background-color: $blue;
+        @include animation(thirdbar 2s ease 0s infinite alternate);
+      }
     }
   }
 }

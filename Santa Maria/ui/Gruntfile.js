@@ -18,11 +18,12 @@ module.exports = function (grunt) {
                 files: {
                     'build/all.js': [
                         'coffee/base_presenter.coffee',
-                        'coffee/simple_event_presenter.coffee',
-                        'coffee/multiple_subscribers_presenter.coffee',
-                        'coffee/two_events_presenter.coffee',
-                        'coffee/two_buses_presenter.coffee',
-                        'coffee/event_data_presenter.coffee',
+                        'coffee/landing_presenter.coffee',
+                        'coffee/slideshow/simple_event_presenter.coffee',
+                        'coffee/slideshow/multiple_subscribers_presenter.coffee',
+                        'coffee/slideshow/two_events_presenter.coffee',
+                        'coffee/slideshow/two_buses_presenter.coffee',
+                        'coffee/slideshow/event_data_presenter.coffee',
                         'coffee/benchmark_data.coffee',
                         'coffee/benchmark_presenter.coffee',
                     ]

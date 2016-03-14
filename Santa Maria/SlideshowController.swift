@@ -7,10 +7,6 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
     private var pageViewController: UIPageViewController?
     private var pageViewContentController: PageViewContentController?
 
-    private var navigationBarHeight: CGFloat {
-        return navigationBar.frame.height
-    }
-
     private func getPage(index: Int) -> PageViewContentController? {
         guard let s = storyboard else {
             return nil
@@ -42,8 +38,10 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
             fatalError()
         }
 
+        let y = navigationBar.frame.maxY
+
         pageViewController.setViewControllers([page], direction: .Forward, animated: false, completion: nil)
-        pageViewController.view.frame = CGRect(x: 0, y: navigationBarHeight, width: view.frame.size.width, height: view.frame.size.height - navigationBarHeight)
+        pageViewController.view.frame = CGRect(x: 0, y: y, width: view.frame.size.width, height: view.frame.size.height - y)
         addChildViewController(pageViewController)
         view.addSubview(pageViewController.view)
         self.pageViewController = pageViewController

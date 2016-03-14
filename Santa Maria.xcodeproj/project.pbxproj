@@ -35,6 +35,7 @@
 		A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33261C92065400D66868 /* simple_event_explanation.html */; };
 		A75A332E1C92065400D66868 /* simple_event.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33271C92065400D66868 /* simple_event.html */; };
 		A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C51C97651A00A4DB46 /* LandingController.swift */; };
+		A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */ = {isa = PBXBuildFile; fileRef = A77959C71C97733600A4DB46 /* slideshow_landing.html */; };
 		A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792B2F21C91E31A001B3BFB /* AppDelegate.swift */; };
 		A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F61C91E31A001B3BFB /* Main.storyboard */; };
 		A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F91C91E31A001B3BFB /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		A75A33261C92065400D66868 /* simple_event_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event_explanation.html; path = ui/build/simple_event_explanation.html; sourceTree = "<group>"; };
 		A75A33271C92065400D66868 /* simple_event.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event.html; path = ui/build/simple_event.html; sourceTree = "<group>"; };
 		A77959C51C97651A00A4DB46 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
+		A77959C71C97733600A4DB46 /* slideshow_landing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = slideshow_landing.html; path = ui/build/slideshow_landing.html; sourceTree = "<group>"; };
 		A792B2EF1C91E31A001B3BFB /* Santa Maria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa Maria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792B2F21C91E31A001B3BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A792B2F71C91E31A001B3BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				A75A33241C92065400D66868 /* prism.css */,
 				A719AB561C9344DC00555596 /* landing.html */,
 				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
+				A77959C71C97733600A4DB46 /* slideshow_landing.html */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
 				A75A33271C92065400D66868 /* simple_event.html */,
 				A719AB521C9257F000555596 /* two_buses.html */,
@@ -254,6 +257,7 @@
 				A719AB601C938BE400555596 /* two_events.html in Resources */,
 				A719AB4B1C924C1100555596 /* caravel.min.js in Resources */,
 				A75A332E1C92065400D66868 /* simple_event.html in Resources */,
+				A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */,
 				A792B2FD1C91E31A001B3BFB /* LaunchScreen.storyboard in Resources */,
 				A719AB661C93A30500555596 /* benchmark.html in Resources */,
 				A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */,

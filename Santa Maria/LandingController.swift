@@ -13,16 +13,21 @@ class LandingController: UIViewController {
         let draft = Caravel.getDraft(config)
 
         let webView = WKWebView(frame: view.frame, configuration: config)
+        self.webView = webView
 
         Caravel.get(self, name: "Landing", wkWebView: webView, draft: draft, whenReady: { bus in
             self.bus = bus
 
             bus.register("Slideshow") { _, _ in
+                self.performSegueWithIdentifier(R.segue.showSlideshow, sender: self)
             }
 
-            bus.register("Duration Benchmark") { _, _ in
+            bus.register("DurationBenchmark") { _, _ in
             }
         })
+
+        webView.scrollView.bounces = false
+        view.addSubview(webView)
 
         webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("landing", withExtension: "html")!))
     }

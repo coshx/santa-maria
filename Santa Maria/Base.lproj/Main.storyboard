@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3VM-gX-OkE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rGV-Bx-esQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Main Controller-->
+        <!--Slideshow Controller-->
         <scene sceneID="ldx-fg-wgC">
             <objects>
-                <viewController id="3VM-gX-OkE" customClass="MainController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3VM-gX-OkE" customClass="SlideshowController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XBk-LJ-LIN"/>
                         <viewControllerLayoutGuide type="bottom" id="ISP-k9-uvW"/>
@@ -18,10 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="fC9-IK-W1n" kind="unwind" identifier="exitSlideshow" unwindAction="backFromSlideshow:" id="FWC-40-Xnd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPI-vt-4bM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fC9-IK-W1n" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="192" y="-438"/>
+            <point key="canvasLocation" x="186" y="-440"/>
+        </scene>
+        <!--Landing Controller-->
+        <scene sceneID="x3D-9A-Ofd">
+            <objects>
+                <viewController id="rGV-Bx-esQ" customClass="LandingController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yv9-5c-j5S"/>
+                        <viewControllerLayoutGuide type="bottom" id="wHL-IZ-s1R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dUb-Ye-ukq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="3VM-gX-OkE" kind="show" identifier="showSlideshow" id="ZVe-rC-srb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wu5-R8-6Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200" y="478"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="QRI-Ar-bBS">

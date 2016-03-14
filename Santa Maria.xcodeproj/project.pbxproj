@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A719AB3E1C92081200555596 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3D1C92081200555596 /* MainController.swift */; };
+		A719AB3E1C92081200555596 /* SlideshowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3D1C92081200555596 /* SlideshowController.swift */; };
 		A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB3F1C920B1900555596 /* PageViewContentController.swift */; };
 		A719AB431C92202800555596 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB421C92202800555596 /* R.generated.swift */; };
 		A719AB451C9242F800555596 /* jquery.mobile-events.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A719AB441C9242F800555596 /* jquery.mobile-events.min.js */; };
@@ -34,6 +34,7 @@
 		A75A332C1C92065400D66868 /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33251C92065400D66868 /* prism.js */; };
 		A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33261C92065400D66868 /* simple_event_explanation.html */; };
 		A75A332E1C92065400D66868 /* simple_event.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33271C92065400D66868 /* simple_event.html */; };
+		A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C51C97651A00A4DB46 /* LandingController.swift */; };
 		A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792B2F21C91E31A001B3BFB /* AppDelegate.swift */; };
 		A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F61C91E31A001B3BFB /* Main.storyboard */; };
 		A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F91C91E31A001B3BFB /* Assets.xcassets */; };
@@ -45,7 +46,7 @@
 		32D4E125DB7C98417674CBC3 /* Pods_Santa_Maria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Santa_Maria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1076F40D476133367CD42E6 /* Pods-Santa Maria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa Maria.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Santa Maria/Pods-Santa Maria.debug.xcconfig"; sourceTree = "<group>"; };
 		A1896A6F575E649446B05B87 /* Pods-Santa Maria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Santa Maria.release.xcconfig"; path = "Pods/Target Support Files/Pods-Santa Maria/Pods-Santa Maria.release.xcconfig"; sourceTree = "<group>"; };
-		A719AB3D1C92081200555596 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		A719AB3D1C92081200555596 /* SlideshowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideshowController.swift; sourceTree = "<group>"; };
 		A719AB3F1C920B1900555596 /* PageViewContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewContentController.swift; sourceTree = "<group>"; };
 		A719AB421C92202800555596 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A719AB441C9242F800555596 /* jquery.mobile-events.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery.mobile-events.min.js"; path = "ui/build/jquery.mobile-events.min.js"; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		A75A33251C92065400D66868 /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = prism.js; path = ui/build/prism.js; sourceTree = "<group>"; };
 		A75A33261C92065400D66868 /* simple_event_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event_explanation.html; path = ui/build/simple_event_explanation.html; sourceTree = "<group>"; };
 		A75A33271C92065400D66868 /* simple_event.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event.html; path = ui/build/simple_event.html; sourceTree = "<group>"; };
+		A77959C51C97651A00A4DB46 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		A792B2EF1C91E31A001B3BFB /* Santa Maria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa Maria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792B2F21C91E31A001B3BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A792B2F71C91E31A001B3BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,8 +178,9 @@
 				A792B2F91C91E31A001B3BFB /* Assets.xcassets */,
 				A792B2FB1C91E31A001B3BFB /* LaunchScreen.storyboard */,
 				A792B2FE1C91E31A001B3BFB /* Info.plist */,
-				A719AB3D1C92081200555596 /* MainController.swift */,
+				A719AB3D1C92081200555596 /* SlideshowController.swift */,
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
+				A77959C51C97651A00A4DB46 /* LandingController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -337,9 +340,10 @@
 			files = (
 				A719AB551C925E5000555596 /* BaseCaravel.swift in Sources */,
 				A719AB471C924A4500555596 /* SimpleEventCaravel.swift in Sources */,
+				A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */,
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,
-				A719AB3E1C92081200555596 /* MainController.swift in Sources */,
+				A719AB3E1C92081200555596 /* SlideshowController.swift in Sources */,
 				A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */,
 				A719AB641C93A26800555596 /* BenchmarkCaravel.swift in Sources */,
 				A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */,

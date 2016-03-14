@@ -1,6 +1,6 @@
 import UIKit
 
-class MainController: UIViewController, UIPageViewControllerDataSource {
+class SlideshowController: UIViewController, UIPageViewControllerDataSource {
     private var pageViewController: UIPageViewController?
     private var pageViewContentController: PageViewContentController?
 

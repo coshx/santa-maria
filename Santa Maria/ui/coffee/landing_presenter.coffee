@@ -1,5 +1,6 @@
 class LandingPresenter extends BasePresenter
   onCreate: () ->
+    super
     @bus = Caravel.get("Landing")
 
     $('.js-slideshow').on 'click', () => @bus.post("Slideshow")

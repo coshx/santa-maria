@@ -4,27 +4,14 @@ import Caravel
 import SwiftyTimer
 import Async
 
-class ResponsivenessBenchmarkController: UIViewController {
-    private var webView: WKWebView?
-
-    private var bus: EventBus?
+class ResponsivenessBenchmarkController: BaseController {
     private var timer: NSTimer?
 
     private var currentComplexity = 1
     private var currentDataSet: [AnyObject]?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let config = WKWebViewConfiguration()
-        let draft = Caravel.getDraft(config)
-
-        let webView = WKWebView(frame: view.frame, configuration: config)
-        self.webView = webView
-
-        Caravel.get(self, name: "ResponsivenessBenchmark", wkWebView: webView, draft: draft, whenReady: { bus in
-            self.bus = bus
-
+    override func whenBusReady() {
+        if let bus = self.bus {
             bus.registerOnMain("EventNumber") { name, data in
                 let n = data as! Int
 
@@ -48,18 +35,17 @@ class ResponsivenessBenchmarkController: UIViewController {
             bus.register("Event") { name, _ in
                 print(name)
             }
-        })
+        }
+    }
 
-        webView.scrollView.bounces = false
-        view.addSubview(webView)
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("responsiveness_benchmark", withExtension: "html")!))
+        loadPage("responsiveness_benchmark", busName: "ResponsivenessBenchmark", exitSegueIdentifier: R.segue.exitResponsivenessBenchmark)
     }
 
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        bus?.unregister()
-        bus = nil
         timer?.invalidate()
         timer = nil
     }

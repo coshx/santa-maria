@@ -36,6 +36,7 @@
 		A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33261C92065400D66868 /* simple_event_explanation.html */; };
 		A75A332E1C92065400D66868 /* simple_event.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33271C92065400D66868 /* simple_event.html */; };
 		A76177411C978C0600F4332E /* time_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A76177401C978C0600F4332E /* time_benchmark.html */; };
+		A76CFBB81C98C8010098E738 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76CFBB71C98C8010098E738 /* BaseController.swift */; };
 		A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C51C97651A00A4DB46 /* LandingController.swift */; };
 		A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */ = {isa = PBXBuildFile; fileRef = A77959C71C97733600A4DB46 /* slideshow_landing.html */; };
 		A77959CA1C977D1400A4DB46 /* TimeBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */; };
@@ -79,6 +80,7 @@
 		A75A33261C92065400D66868 /* simple_event_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event_explanation.html; path = ui/build/simple_event_explanation.html; sourceTree = "<group>"; };
 		A75A33271C92065400D66868 /* simple_event.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event.html; path = ui/build/simple_event.html; sourceTree = "<group>"; };
 		A76177401C978C0600F4332E /* time_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = time_benchmark.html; path = ui/build/time_benchmark.html; sourceTree = "<group>"; };
+		A76CFBB71C98C8010098E738 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		A77959C51C97651A00A4DB46 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		A77959C71C97733600A4DB46 /* slideshow_landing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = slideshow_landing.html; path = ui/build/slideshow_landing.html; sourceTree = "<group>"; };
 		A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBenchmarkController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */,
 				A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */,
 				A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */,
+				A76CFBB71C98C8010098E738 /* BaseController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */,
 				A719AB431C92202800555596 /* R.generated.swift in Sources */,
 				A719AB491C924A9A00555596 /* ICaravelPage.swift in Sources */,
+				A76CFBB81C98C8010098E738 /* BaseController.swift in Sources */,
 				A77959CA1C977D1400A4DB46 /* TimeBenchmarkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

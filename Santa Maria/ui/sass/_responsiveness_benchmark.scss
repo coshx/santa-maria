@@ -1,0 +1,135 @@
+.responsiveness-benchmark {
+  @extend ._playground-wrapper;
+
+  .pulser-wrapper {
+    @include flex(1);
+    width: 100%;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+
+  @include keyframes(pulse) {
+    0% {
+      box-shadow: 0 0 0 10px lighten($blue, 20%);
+    }
+
+    100% {
+      box-shadow: 0 0 0 ($medium-dot * 2) lighten($blue, 20%);
+    }
+  }
+
+  .pulser {
+    @include dot($blue, $medium-dot * 2);
+    @include animation(pulse 2s ease 0s infinite alternate);
+    box-shadow: 0 0 0 10px lighten($blue, 20%);
+  }
+
+  $input-pad: .5rem;
+  $input-w: 12.5rem;
+
+  $v-bg: #3f9eff;
+
+  $track-h: .5rem;
+  $track-bg: #d8d8d8;
+
+  $thumb-d: 1rem;
+
+  @mixin track() {
+    height: $track-h;
+    border-radius: $track-h/2;
+    background: $track-bg;
+  }
+
+  @mixin track-fill($val, $c) {
+    background-image: linear-gradient($c, $c);
+    background-repeat: no-repeat;
+    background-size: $val*1% 100%;
+  }
+
+  @mixin thumb() {
+    border: none; /* Firefox, IE */
+    width: $thumb-d;
+    height: $thumb-d;
+    border-radius: $thumb-d/2;
+  }
+
+  @mixin thumb-fill($c, $c2: false) {
+    @if $c2 {
+      box-shadow: inset 0 0 0 $thumb-d/4 $c;
+      background: $c2;
+    } @else {
+      background: $c;
+    }
+  }
+
+  // http://codepen.io/thebabydino/pen/pvpJWX
+  input[type='range'] {
+    -webkit-appearance: none;
+    display: block;
+    margin: 1em;
+    padding: 0 $input-pad;
+    width: $input-w;
+    font-size: 1em;
+    cursor: pointer;
+
+    /* slider components */
+    &::-webkit-slider-runnable-track {
+      -webkit-appearance: none;
+      @include track();
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      position: relative;
+      margin: ($track-h - $thumb-d)/2;
+      @include thumb();
+    }
+
+    /deep/ #track {
+      position: relative;
+
+      &:before, &:after {
+        position: absolute;
+        top: ($track-h - $thumb-d)/2;
+        height: $thumb-d;
+        transform: scale(.8);
+        color: dimgrey;
+        font-weight: 600;
+        line-height: $thumb-d;
+      }
+
+      &:before {
+        right: calc(100% + #{.75*$thumb-d});
+      }
+      &:after {
+        left: calc(100% + #{.75*$thumb-d});
+      }
+    }
+
+    &.purple {
+      &::-webkit-slider-thumb {
+        @include thumb-fill($purple);
+      }
+
+      &::-webkit-slider-runnable-track {
+        @include track-fill(100, lighten($purple, 20%));
+      }
+    }
+
+    &.pink {
+      &::-webkit-slider-thumb {
+        @include thumb-fill($pink);
+      }
+
+      &::-webkit-slider-runnable-track {
+        @include track-fill(100, lighten($pink, 20%));
+      }
+    }
+
+    &:focus {
+      outline: none;
+      background: transparent;
+    }
+  }
+}

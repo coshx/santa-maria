@@ -1,0 +1,16 @@
+extends ./layout
+
+block page
+  .responsiveness-benchmark
+    .pulser-wrapper
+      .pulser
+
+    .settings
+      p
+        input.purple.js-event-number(name='number', type='range', min='10', max='1000', value='10')
+        label.js-event-number-label(for='number') 10
+      p
+        input.pink.js-event-complexity(name='complexity', type='range', min='1', max='10', value='1')
+        label.js-event-complexity-label(for='complexity') 1
+
+  +presenter('ResponsiveBenchmark')

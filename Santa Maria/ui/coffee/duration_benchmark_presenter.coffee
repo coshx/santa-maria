@@ -1,4 +1,4 @@
-class BenchmarkPresenter extends BasePresenter
+class DurationBenchmarkPresenter extends BasePresenter
 
   class Watcher
     constructor: (bus, streamSize, maxGraph, barSelector, dataRange = []) ->
@@ -60,7 +60,7 @@ class BenchmarkPresenter extends BasePresenter
             @bus.post(eventName)
 
   onCreate: () ->
-    @bus = Caravel.get("Benchmark")
+    @bus = Caravel.get("DurationBenchmark")
 
     @streamSize = 100
     @maxGraph = 150

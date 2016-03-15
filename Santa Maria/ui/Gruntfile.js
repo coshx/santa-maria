@@ -24,8 +24,8 @@ module.exports = function (grunt) {
                         'coffee/slideshow/two_events_presenter.coffee',
                         'coffee/slideshow/two_buses_presenter.coffee',
                         'coffee/slideshow/event_data_presenter.coffee',
-                        'coffee/benchmark_data.coffee',
-                        'coffee/benchmark_presenter.coffee',
+                        'coffee/duration_benchmark_data.coffee',
+                        'coffee/duration_benchmark_presenter.coffee',
                     ]
                 }
             }
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
                     'build/two_buses.html': 'jade/slideshow/two_buses.jade',
                     'build/two_buses_explanation.html': 'jade/slideshow/two_buses_explanation.jade',
                     'build/event_data.html': 'jade/slideshow/event_data.jade',
-                    'build/benchmark.html': 'jade/benchmark.jade'
+                    'build/duration_benchmark.html': 'jade/duration_benchmark.jade'
                 }
             }
         },

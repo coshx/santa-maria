@@ -1,4 +1,4 @@
-.benchmark {
+.duration-benchmark {
   width: 100%;
   height: 100%;
   @include display(flex);
@@ -95,7 +95,7 @@
       @include align-items(center);
 
       li {
-        margin: 1rem 2rem;
+        margin: 1rem 1.5rem;
 
         @include transform(rotate(45deg));
         font: {

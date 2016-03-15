@@ -25,8 +25,6 @@
 		A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB5D1C93874600555596 /* EventDataCaravel.swift */; };
 		A719AB601C938BE400555596 /* two_events.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB5F1C938BE400555596 /* two_events.html */; };
 		A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB611C93960900555596 /* TwoEventsCaravel.swift */; };
-		A719AB641C93A26800555596 /* BenchmarkCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB631C93A26800555596 /* BenchmarkCaravel.swift */; };
-		A719AB661C93A30500555596 /* benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB651C93A30500555596 /* benchmark.html */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -34,8 +32,10 @@
 		A75A332C1C92065400D66868 /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33251C92065400D66868 /* prism.js */; };
 		A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33261C92065400D66868 /* simple_event_explanation.html */; };
 		A75A332E1C92065400D66868 /* simple_event.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33271C92065400D66868 /* simple_event.html */; };
+		A76177411C978C0600F4332E /* duration_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A76177401C978C0600F4332E /* duration_benchmark.html */; };
 		A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C51C97651A00A4DB46 /* LandingController.swift */; };
 		A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */ = {isa = PBXBuildFile; fileRef = A77959C71C97733600A4DB46 /* slideshow_landing.html */; };
+		A77959CA1C977D1400A4DB46 /* DurationBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */; };
 		A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792B2F21C91E31A001B3BFB /* AppDelegate.swift */; };
 		A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F61C91E31A001B3BFB /* Main.storyboard */; };
 		A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F91C91E31A001B3BFB /* Assets.xcassets */; };
@@ -65,8 +65,6 @@
 		A719AB5D1C93874600555596 /* EventDataCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataCaravel.swift; sourceTree = "<group>"; };
 		A719AB5F1C938BE400555596 /* two_events.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_events.html; path = ui/build/two_events.html; sourceTree = "<group>"; };
 		A719AB611C93960900555596 /* TwoEventsCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoEventsCaravel.swift; sourceTree = "<group>"; };
-		A719AB631C93A26800555596 /* BenchmarkCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BenchmarkCaravel.swift; sourceTree = "<group>"; };
-		A719AB651C93A30500555596 /* benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = benchmark.html; path = ui/build/benchmark.html; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -74,8 +72,10 @@
 		A75A33251C92065400D66868 /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = prism.js; path = ui/build/prism.js; sourceTree = "<group>"; };
 		A75A33261C92065400D66868 /* simple_event_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event_explanation.html; path = ui/build/simple_event_explanation.html; sourceTree = "<group>"; };
 		A75A33271C92065400D66868 /* simple_event.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event.html; path = ui/build/simple_event.html; sourceTree = "<group>"; };
+		A76177401C978C0600F4332E /* duration_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = duration_benchmark.html; path = ui/build/duration_benchmark.html; sourceTree = "<group>"; };
 		A77959C51C97651A00A4DB46 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		A77959C71C97733600A4DB46 /* slideshow_landing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = slideshow_landing.html; path = ui/build/slideshow_landing.html; sourceTree = "<group>"; };
+		A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationBenchmarkController.swift; sourceTree = "<group>"; };
 		A792B2EF1C91E31A001B3BFB /* Santa Maria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa Maria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792B2F21C91E31A001B3BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A792B2F71C91E31A001B3BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 				A719AB501C92572400555596 /* TwoBusesCaravel.swift */,
 				A719AB5D1C93874600555596 /* EventDataCaravel.swift */,
 				A719AB611C93960900555596 /* TwoEventsCaravel.swift */,
-				A719AB631C93A26800555596 /* BenchmarkCaravel.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -131,18 +130,18 @@
 		A75A33201C92063000D66868 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				A719AB651C93A30500555596 /* benchmark.html */,
-				A719AB5F1C938BE400555596 /* two_events.html */,
-				A719AB5B1C93513B00555596 /* event_data.html */,
-				A719AB591C9348ED00555596 /* two_buses_explanation.html */,
 				A75A33211C92065400D66868 /* all.css */,
 				A75A33241C92065400D66868 /* prism.css */,
+				A76177401C978C0600F4332E /* duration_benchmark.html */,
+				A719AB5B1C93513B00555596 /* event_data.html */,
 				A719AB561C9344DC00555596 /* landing.html */,
 				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
-				A77959C71C97733600A4DB46 /* slideshow_landing.html */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
 				A75A33271C92065400D66868 /* simple_event.html */,
+				A77959C71C97733600A4DB46 /* slideshow_landing.html */,
+				A719AB591C9348ED00555596 /* two_buses_explanation.html */,
 				A719AB521C9257F000555596 /* two_buses.html */,
+				A719AB5F1C938BE400555596 /* two_events.html */,
 				A75A33221C92065400D66868 /* all.js */,
 				A719AB4A1C924C1100555596 /* caravel.min.js */,
 				A75A33231C92065400D66868 /* jquery.min.js */,
@@ -184,6 +183,7 @@
 				A719AB3D1C92081200555596 /* SlideshowController.swift */,
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
 				A77959C51C97651A00A4DB46 /* LandingController.swift */,
+				A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -252,6 +252,7 @@
 			files = (
 				A719AB531C9257F000555596 /* two_buses.html in Resources */,
 				A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */,
+				A76177411C978C0600F4332E /* duration_benchmark.html in Resources */,
 				A719AB5C1C93513B00555596 /* event_data.html in Resources */,
 				A75A33291C92065400D66868 /* all.js in Resources */,
 				A719AB601C938BE400555596 /* two_events.html in Resources */,
@@ -259,7 +260,6 @@
 				A75A332E1C92065400D66868 /* simple_event.html in Resources */,
 				A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */,
 				A792B2FD1C91E31A001B3BFB /* LaunchScreen.storyboard in Resources */,
-				A719AB661C93A30500555596 /* benchmark.html in Resources */,
 				A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */,
 				A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */,
 				A719AB571C9344DC00555596 /* landing.html in Resources */,
@@ -349,12 +349,12 @@
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,
 				A719AB3E1C92081200555596 /* SlideshowController.swift in Sources */,
 				A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */,
-				A719AB641C93A26800555596 /* BenchmarkCaravel.swift in Sources */,
 				A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,
 				A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */,
 				A719AB431C92202800555596 /* R.generated.swift in Sources */,
 				A719AB491C924A9A00555596 /* ICaravelPage.swift in Sources */,
+				A77959CA1C977D1400A4DB46 /* DurationBenchmarkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

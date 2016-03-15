@@ -1,7 +1,13 @@
-import Caravel
+import UIKit
 import WebKit
+import Caravel
 
-class BenchmarkCaravel: BaseCaravel {
+class DurationBenchmarkController: UIViewController {
+    private var webView: WKWebView?
+    @IBOutlet weak var navigationBar: UINavigationBar!
+
+    private var bus: EventBus?
+
     private let noDataRef = NSObject()
     private var noDataBus: EventBus?
 
@@ -28,8 +34,17 @@ class BenchmarkCaravel: BaseCaravel {
         }
     }
 
-    override func setDraft(webView: WKWebView, draft: EventBus.Draft, config: WKWebViewConfiguration) {
-        Caravel.get(self, name: "Benchmark", wkWebView: webView, draft: draft, whenReadyOnMain: { bus in
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let config = WKWebViewConfiguration()
+        let draft = Caravel.getDraft(config)
+
+        let frame = CGRect(x: 0, y: navigationBar.frame.maxY, width: view.frame.width, height: view.frame.height - navigationBar.frame.height)
+        let webView = WKWebView(frame: frame, configuration: config)
+        self.webView = webView
+
+        Caravel.get(self, name: "DurationBenchmark", wkWebView: webView, draft: draft, whenReadyOnMain: { bus in
             self.bus = bus
 
             bus.registerOnMain("StreamSize") { _, data in
@@ -158,10 +173,18 @@ class BenchmarkCaravel: BaseCaravel {
 
             self.flagBusAsInit()
         })
+
+        webView.scrollView.bounces = false
+        view.addSubview(webView)
+
+        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("duration_benchmark", withExtension: "html")!))
     }
 
-    override func viewWillBeRecycled() {
-        super.viewWillBeRecycled()
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        bus?.unregister()
+        bus = nil
 
         self.initializedBuses = 0
         self.streamSize = nil
@@ -176,5 +199,9 @@ class BenchmarkCaravel: BaseCaravel {
         self.dictionaryBus = nil
         self.complexBus?.unregister()
         self.complexBus = nil
+    }
+
+    @IBAction func onBackClicked(sender: AnyObject) {
+        performSegueWithIdentifier(R.segue.exitDurationBenchmark, sender: self)
     }
 }

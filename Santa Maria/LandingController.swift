@@ -23,6 +23,7 @@ class LandingController: UIViewController {
             }
 
             bus.register("DurationBenchmark") { _, _ in
+                self.performSegueWithIdentifier(R.segue.showDurationBenchmark, sender: self)
             }
         })
 
@@ -33,5 +34,8 @@ class LandingController: UIViewController {
     }
 
     @IBAction func backFromSlideshow(segue: UIStoryboardSegue) {
+    }
+
+    @IBAction func backFromDurationBenchmark(segue: UIStoryboardSegue) {
     }
 }

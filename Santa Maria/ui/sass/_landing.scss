@@ -48,7 +48,7 @@
     border: 1px solid $grey;
   }
 
-  .slideshow, .duration-benchmark {
+  .slideshow, .duration-benchmark-insight {
     @extend ._insight;
   }
 
@@ -92,11 +92,11 @@
 
     .receiver {
       @include dot($green, $small-dot / 2);
-      @include animation(greenpulse 4s ease 2s infinite);
+      @include animation(greenpulse 4s ease 1s infinite);
     }
   }
 
-  .duration-benchmark {
+  .duration-benchmark-insight {
     @include display(flex);
     @include justify-content(space-between);
     @include align-items(flex-end);

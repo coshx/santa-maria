@@ -2,12 +2,16 @@ import UIKit
 import WebKit
 import Caravel
 import SwiftyTimer
+import Async
 
 class ResponsivenessBenchmarkController: UIViewController {
     private var webView: WKWebView?
 
     private var bus: EventBus?
     private var timer: NSTimer?
+
+    private var currentComplexity = 1
+    private var currentDataSet: [AnyObject]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +28,21 @@ class ResponsivenessBenchmarkController: UIViewController {
             bus.registerOnMain("EventNumber") { name, data in
                 let n = data as! Int
 
+                if self.currentDataSet == nil {
+                    self.currentDataSet = ResponsivenessBenchmarkData.generate(self.currentComplexity)
+                }
+
                 self.timer?.invalidate()
                 self.timer = NSTimer.every(1.0 / Double(n)) {
-                    bus.post("Event")
+                    Async.background { bus.post("Event") }
                 }
+            }
+
+            bus.registerOnMain("EventComplexity") { name, data in
+                let n = data as! Int
+
+                self.currentComplexity = n
+                self.currentDataSet = ResponsivenessBenchmarkData.generate(self.currentComplexity)
             }
 
             bus.register("Event") { name, _ in

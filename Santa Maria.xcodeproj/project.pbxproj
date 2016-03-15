@@ -27,6 +27,7 @@
 		A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB611C93960900555596 /* TwoEventsCaravel.swift */; };
 		A73AEFB51C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */; };
 		A73AEFB71C98719500DC34B8 /* responsiveness_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */; };
+		A73AEFB91C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -69,6 +70,7 @@
 		A719AB611C93960900555596 /* TwoEventsCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoEventsCaravel.swift; sourceTree = "<group>"; };
 		A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsivenessBenchmarkController.swift; sourceTree = "<group>"; };
 		A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = responsiveness_benchmark.html; path = ui/build/responsiveness_benchmark.html; sourceTree = "<group>"; };
+		A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsivenessBenchmarkData.swift; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				A77959C51C97651A00A4DB46 /* LandingController.swift */,
 				A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */,
 				A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */,
+				A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,
 				A719AB3E1C92081200555596 /* SlideshowController.swift in Sources */,
+				A73AEFB91C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift in Sources */,
 				A73AEFB51C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift in Sources */,
 				A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */,
 				A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */,

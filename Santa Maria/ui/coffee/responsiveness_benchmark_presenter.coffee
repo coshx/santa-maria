@@ -17,10 +17,17 @@ class ResponsivenessBenchmarkPresenter extends BasePresenter
 
     @eventComplexityRange.on 'change input', () =>
       @eventComplexityValue.text @eventComplexityRange.val()
+      @postEventComplexity()
 
     @postEventNumber()
+    @postEventComplexity()
 
   postEventNumber: () ->
     n = parseInt(@eventNumberRange.val())
-    clearTimeout(@delayTimer) if @delayTimer?
-    @delayTimer = setTimeout (() => @bus.post('EventNumber', n)), 300
+    clearTimeout(@postEventNumberTimer) if @postEventNumberTimer?
+    @postEventNumberTimer = setTimeout (() => @bus.post('EventNumber', n)), 500
+
+  postEventComplexity: () ->
+    n = parseInt(@eventComplexityRange.val())
+    clearTimeout(@postEventComplexityTimer) if @postEventComplexityTimer?
+    @postEventComplexityTimer = setTimeout (() => @bus.post("EventComplexity", n)), 500

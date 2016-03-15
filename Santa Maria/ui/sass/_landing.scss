@@ -15,14 +15,17 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-align: center;
 
     li {
       display: inline-block;
       vertical-align: middle;
       padding: 0;
       margin: 0;
-      width: 45%;
+      width: 50%;
+
+      &:nth-child(2n) {
+        margin-left: -5px;
+      }
 
       h4 {
         font: {
@@ -49,11 +52,8 @@
     border: 1px solid $grey;
   }
 
-  .slideshow, .time-benchmark-insight {
-    @extend ._insight;
-  }
-
   .slideshow {
+    @extend ._insight;
     @include display(flex);
     @include justify-content(space-between);
     @include align-items(center);
@@ -98,6 +98,7 @@
   }
 
   .time-benchmark-insight {
+    @extend ._insight;
     @include display(flex);
     @include justify-content(space-between);
     @include align-items(flex-end);
@@ -166,6 +167,29 @@
         background-color: $blue;
         @include animation(thirdbar 2s ease 0s infinite alternate);
       }
+    }
+  }
+
+  .responsiveness-benchmark-insight {
+    @extend ._insight;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+
+    @include keyframes(pulseinsight) {
+      0% {
+        box-shadow: 0 0 0 5px lighten($blue, 20%);
+      }
+
+      100% {
+        box-shadow: 0 0 0 $small-dot lighten($blue, 20%);
+      }
+    }
+
+    .pulser {
+      @include dot($blue, $small-dot / 2);
+      @include animation(pulseinsight 2s ease 2s infinite alternate);
+      box-shadow: 0 0 0 5px lighten($blue, 20%);
     }
   }
 }

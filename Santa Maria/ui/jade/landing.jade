@@ -2,29 +2,31 @@ extends ./layout
 
 block page
   .landing
-    h1 Santa Maria
-    h2 An interactive demonstration of Caravel
+    header
+      h1 Santa Maria
+      h2 An interactive demonstration of Caravel
 
-    ul
-      li.js-slideshow
-        .insight-wrapper
-          .slideshow
-            .emitter
-            .receiver
-        h4 Slideshow
+    .body
+      ul
+        li.js-slideshow
+          .insight-wrapper
+            .slideshow
+              .emitter
+              .receiver
+          h4 Slideshow
 
-      li.js-time-benchmark
-        .insight-wrapper
-          .time-benchmark-insight
-            .bar
-            .bar
-            .bar
-        h4 Time Benchmark
+        li.js-time-benchmark
+          .insight-wrapper
+            .time-benchmark-insight
+              .bar
+              .bar
+              .bar
+          h4 Time Benchmark
 
-      li.js-responsiveness-benchmark
-        .insight-wrapper
-          .responsiveness-benchmark-insight
-            .pulser
-        h4 Responsiveness Benchmark
+        li.js-responsiveness-benchmark
+          .insight-wrapper
+            .responsiveness-benchmark-insight
+              .pulser
+          h4 Responsiveness Benchmark
 
   +presenter('Landing')

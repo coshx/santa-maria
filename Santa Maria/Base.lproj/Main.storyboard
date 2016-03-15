@@ -63,7 +63,7 @@
                     </view>
                     <connections>
                         <segue destination="3VM-gX-OkE" kind="show" identifier="showSlideshow" id="ZVe-rC-srb"/>
-                        <segue destination="5vp-68-vsa" kind="show" identifier="showDurationBenchmark" id="3Vh-rx-Ddh"/>
+                        <segue destination="5vp-68-vsa" kind="show" identifier="showTimeBenchmark" id="3Vh-rx-Ddh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wu5-R8-6Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="881" y="-67"/>
         </scene>
-        <!--Duration Benchmark Controller-->
+        <!--Time Benchmark Controller-->
         <scene sceneID="ama-sE-pXV">
             <objects>
-                <viewController id="5vp-68-vsa" customClass="DurationBenchmarkController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5vp-68-vsa" customClass="TimeBenchmarkController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ceP-4f-r5t"/>
                         <viewControllerLayoutGuide type="bottom" id="94o-k6-5HI"/>
@@ -130,7 +130,7 @@
                     </view>
                     <connections>
                         <outlet property="navigationBar" destination="udd-YJ-ce3" id="m6E-Sf-Bqm"/>
-                        <segue destination="ysc-Ip-8vc" kind="unwind" identifier="exitDurationBenchmark" unwindAction="backFromDurationBenchmark:" id="3vs-ht-xvN"/>
+                        <segue destination="ysc-Ip-8vc" kind="unwind" identifier="exitTimeBenchmark" unwindAction="backFromTimeBenchmark:" id="3vs-ht-xvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlY-Kh-4iY" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -4,4 +4,4 @@ class LandingPresenter extends BasePresenter
 
     $('.js-slideshow').on 'click', () => @bus.post("Slideshow")
 
-    $('.js-duration-benchmark').on 'click', () => @bus.post("DurationBenchmark")
+    $('.js-time-benchmark').on 'click', () => @bus.post("TimeBenchmark")

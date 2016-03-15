@@ -22,8 +22,8 @@ class LandingController: UIViewController {
                 self.performSegueWithIdentifier(R.segue.showSlideshow, sender: self)
             }
 
-            bus.register("DurationBenchmark") { _, _ in
-                self.performSegueWithIdentifier(R.segue.showDurationBenchmark, sender: self)
+            bus.register("TimeBenchmark") { _, _ in
+                self.performSegueWithIdentifier(R.segue.showTimeBenchmark, sender: self)
             }
         })
 
@@ -36,6 +36,6 @@ class LandingController: UIViewController {
     @IBAction func backFromSlideshow(segue: UIStoryboardSegue) {
     }
 
-    @IBAction func backFromDurationBenchmark(segue: UIStoryboardSegue) {
+    @IBAction func backFromTimeBenchmark(segue: UIStoryboardSegue) {
     }
 }

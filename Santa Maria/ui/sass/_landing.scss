@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-align: center;
 
     li {
       display: inline-block;
@@ -48,7 +49,7 @@
     border: 1px solid $grey;
   }
 
-  .slideshow, .duration-benchmark-insight {
+  .slideshow, .time-benchmark-insight {
     @extend ._insight;
   }
 
@@ -96,7 +97,7 @@
     }
   }
 
-  .duration-benchmark-insight {
+  .time-benchmark-insight {
     @include display(flex);
     @include justify-content(space-between);
     @include align-items(flex-end);

@@ -32,10 +32,10 @@
 		A75A332C1C92065400D66868 /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33251C92065400D66868 /* prism.js */; };
 		A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33261C92065400D66868 /* simple_event_explanation.html */; };
 		A75A332E1C92065400D66868 /* simple_event.html in Resources */ = {isa = PBXBuildFile; fileRef = A75A33271C92065400D66868 /* simple_event.html */; };
-		A76177411C978C0600F4332E /* duration_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A76177401C978C0600F4332E /* duration_benchmark.html */; };
+		A76177411C978C0600F4332E /* time_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A76177401C978C0600F4332E /* time_benchmark.html */; };
 		A77959C61C97651A00A4DB46 /* LandingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C51C97651A00A4DB46 /* LandingController.swift */; };
 		A77959C81C97733600A4DB46 /* slideshow_landing.html in Resources */ = {isa = PBXBuildFile; fileRef = A77959C71C97733600A4DB46 /* slideshow_landing.html */; };
-		A77959CA1C977D1400A4DB46 /* DurationBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */; };
+		A77959CA1C977D1400A4DB46 /* TimeBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */; };
 		A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A792B2F21C91E31A001B3BFB /* AppDelegate.swift */; };
 		A792B2F81C91E31A001B3BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F61C91E31A001B3BFB /* Main.storyboard */; };
 		A792B2FA1C91E31A001B3BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A792B2F91C91E31A001B3BFB /* Assets.xcassets */; };
@@ -72,10 +72,10 @@
 		A75A33251C92065400D66868 /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = prism.js; path = ui/build/prism.js; sourceTree = "<group>"; };
 		A75A33261C92065400D66868 /* simple_event_explanation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event_explanation.html; path = ui/build/simple_event_explanation.html; sourceTree = "<group>"; };
 		A75A33271C92065400D66868 /* simple_event.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = simple_event.html; path = ui/build/simple_event.html; sourceTree = "<group>"; };
-		A76177401C978C0600F4332E /* duration_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = duration_benchmark.html; path = ui/build/duration_benchmark.html; sourceTree = "<group>"; };
+		A76177401C978C0600F4332E /* time_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = time_benchmark.html; path = ui/build/time_benchmark.html; sourceTree = "<group>"; };
 		A77959C51C97651A00A4DB46 /* LandingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingController.swift; sourceTree = "<group>"; };
 		A77959C71C97733600A4DB46 /* slideshow_landing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = slideshow_landing.html; path = ui/build/slideshow_landing.html; sourceTree = "<group>"; };
-		A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DurationBenchmarkController.swift; sourceTree = "<group>"; };
+		A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBenchmarkController.swift; sourceTree = "<group>"; };
 		A792B2EF1C91E31A001B3BFB /* Santa Maria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Santa Maria.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792B2F21C91E31A001B3BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A792B2F71C91E31A001B3BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			children = (
 				A75A33211C92065400D66868 /* all.css */,
 				A75A33241C92065400D66868 /* prism.css */,
-				A76177401C978C0600F4332E /* duration_benchmark.html */,
+				A76177401C978C0600F4332E /* time_benchmark.html */,
 				A719AB5B1C93513B00555596 /* event_data.html */,
 				A719AB561C9344DC00555596 /* landing.html */,
 				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
@@ -183,7 +183,7 @@
 				A719AB3D1C92081200555596 /* SlideshowController.swift */,
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
 				A77959C51C97651A00A4DB46 /* LandingController.swift */,
-				A77959C91C977D1400A4DB46 /* DurationBenchmarkController.swift */,
+				A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			files = (
 				A719AB531C9257F000555596 /* two_buses.html in Resources */,
 				A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */,
-				A76177411C978C0600F4332E /* duration_benchmark.html in Resources */,
+				A76177411C978C0600F4332E /* time_benchmark.html in Resources */,
 				A719AB5C1C93513B00555596 /* event_data.html in Resources */,
 				A75A33291C92065400D66868 /* all.js in Resources */,
 				A719AB601C938BE400555596 /* two_events.html in Resources */,
@@ -354,7 +354,7 @@
 				A719AB4D1C92503B00555596 /* MultipleSubscribersCaravel.swift in Sources */,
 				A719AB431C92202800555596 /* R.generated.swift in Sources */,
 				A719AB491C924A9A00555596 /* ICaravelPage.swift in Sources */,
-				A77959CA1C977D1400A4DB46 /* DurationBenchmarkController.swift in Sources */,
+				A77959CA1C977D1400A4DB46 /* TimeBenchmarkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@ import UIKit
 import WebKit
 import Caravel
 
-class DurationBenchmarkController: UIViewController {
+class TimeBenchmarkController: UIViewController {
     private var webView: WKWebView?
     @IBOutlet weak var navigationBar: UINavigationBar!
 
@@ -44,7 +44,7 @@ class DurationBenchmarkController: UIViewController {
         let webView = WKWebView(frame: frame, configuration: config)
         self.webView = webView
 
-        Caravel.get(self, name: "DurationBenchmark", wkWebView: webView, draft: draft, whenReadyOnMain: { bus in
+        Caravel.get(self, name: "TimeBenchmark", wkWebView: webView, draft: draft, whenReadyOnMain: { bus in
             self.bus = bus
 
             bus.registerOnMain("StreamSize") { _, data in
@@ -177,7 +177,7 @@ class DurationBenchmarkController: UIViewController {
         webView.scrollView.bounces = false
         view.addSubview(webView)
 
-        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("duration_benchmark", withExtension: "html")!))
+        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("time_benchmark", withExtension: "html")!))
     }
 
     override func viewWillDisappear(animated: Bool) {
@@ -202,6 +202,6 @@ class DurationBenchmarkController: UIViewController {
     }
 
     @IBAction func onBackClicked(sender: AnyObject) {
-        performSegueWithIdentifier(R.segue.exitDurationBenchmark, sender: self)
+        performSegueWithIdentifier(R.segue.exitTimeBenchmark, sender: self)
     }
 }

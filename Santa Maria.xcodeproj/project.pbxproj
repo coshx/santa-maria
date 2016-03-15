@@ -25,6 +25,8 @@
 		A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB5D1C93874600555596 /* EventDataCaravel.swift */; };
 		A719AB601C938BE400555596 /* two_events.html in Resources */ = {isa = PBXBuildFile; fileRef = A719AB5F1C938BE400555596 /* two_events.html */; };
 		A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A719AB611C93960900555596 /* TwoEventsCaravel.swift */; };
+		A73AEFB51C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */; };
+		A73AEFB71C98719500DC34B8 /* responsiveness_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -65,6 +67,8 @@
 		A719AB5D1C93874600555596 /* EventDataCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataCaravel.swift; sourceTree = "<group>"; };
 		A719AB5F1C938BE400555596 /* two_events.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = two_events.html; path = ui/build/two_events.html; sourceTree = "<group>"; };
 		A719AB611C93960900555596 /* TwoEventsCaravel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoEventsCaravel.swift; sourceTree = "<group>"; };
+		A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsivenessBenchmarkController.swift; sourceTree = "<group>"; };
+		A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = responsiveness_benchmark.html; path = ui/build/responsiveness_benchmark.html; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				A719AB5B1C93513B00555596 /* event_data.html */,
 				A719AB561C9344DC00555596 /* landing.html */,
 				A719AB4E1C92510800555596 /* multiple_subscribers.html */,
+				A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */,
 				A75A33261C92065400D66868 /* simple_event_explanation.html */,
 				A75A33271C92065400D66868 /* simple_event.html */,
 				A77959C71C97733600A4DB46 /* slideshow_landing.html */,
@@ -184,6 +189,7 @@
 				A719AB3F1C920B1900555596 /* PageViewContentController.swift */,
 				A77959C51C97651A00A4DB46 /* LandingController.swift */,
 				A77959C91C977D1400A4DB46 /* TimeBenchmarkController.swift */,
+				A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */,
 			);
 			path = "Santa Maria";
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				A719AB5A1C9348ED00555596 /* two_buses_explanation.html in Resources */,
 				A75A33281C92065400D66868 /* all.css in Resources */,
 				A75A332C1C92065400D66868 /* prism.js in Resources */,
+				A73AEFB71C98719500DC34B8 /* responsiveness_benchmark.html in Resources */,
 				A75A332D1C92065400D66868 /* simple_event_explanation.html in Resources */,
 				A75A332B1C92065400D66868 /* prism.css in Resources */,
 				A719AB451C9242F800555596 /* jquery.mobile-events.min.js in Resources */,
@@ -348,6 +355,7 @@
 				A719AB401C920B1900555596 /* PageViewContentController.swift in Sources */,
 				A719AB511C92572400555596 /* TwoBusesCaravel.swift in Sources */,
 				A719AB3E1C92081200555596 /* SlideshowController.swift in Sources */,
+				A73AEFB51C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift in Sources */,
 				A719AB5E1C93874600555596 /* EventDataCaravel.swift in Sources */,
 				A719AB621C93960900555596 /* TwoEventsCaravel.swift in Sources */,
 				A792B2F31C91E31A001B3BFB /* AppDelegate.swift in Sources */,

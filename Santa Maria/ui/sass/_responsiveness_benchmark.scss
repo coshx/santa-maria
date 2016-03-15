@@ -25,6 +25,45 @@
     box-shadow: 0 0 0 10px lighten($blue, 20%);
   }
 
+  p, label {
+    &.pink {
+      color: $pink;
+    }
+
+    &.purple {
+      color: $purple;
+    }
+  }
+
+  .label {
+    margin: 1rem .5rem .5rem .5rem;
+    padding-right: 3rem;
+
+    text-align: center;
+    font: {
+      size: .8rem;
+    }
+  }
+
+  .input-wrapper {
+    margin: 0;
+    text-align: center;
+
+    input, label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    label {
+      width: 3rem;
+
+      font: {
+        size: 1rem;
+        weight: bold;
+      }
+    }
+  }
+
   $input-pad: .5rem;
   $input-w: 12.5rem;
 
@@ -66,7 +105,6 @@
   // http://codepen.io/thebabydino/pen/pvpJWX
   input[type='range'] {
     -webkit-appearance: none;
-    display: block;
     margin: 1em;
     padding: 0 $input-pad;
     width: $input-w;

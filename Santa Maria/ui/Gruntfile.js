@@ -26,6 +26,7 @@ module.exports = function (grunt) {
                         'coffee/slideshow/event_data_presenter.coffee',
                         'coffee/time_benchmark_data.coffee',
                         'coffee/time_benchmark_presenter.coffee',
+                        'coffee/responsiveness_benchmark_presenter.coffee',
                     ]
                 }
             }

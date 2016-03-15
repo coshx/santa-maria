@@ -64,6 +64,7 @@
                     <connections>
                         <segue destination="3VM-gX-OkE" kind="show" identifier="showSlideshow" id="ZVe-rC-srb"/>
                         <segue destination="5vp-68-vsa" kind="show" identifier="showTimeBenchmark" id="3Vh-rx-Ddh"/>
+                        <segue destination="nCn-OQ-nL5" kind="show" identifier="showResponsivenessBenchmark" id="xtw-Aa-x0A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wu5-R8-6Ny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,6 +138,28 @@
                 <exit id="ysc-Ip-8vc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="682" y="811"/>
+        </scene>
+        <!--Responsiveness Benchmark Controller-->
+        <scene sceneID="VQQ-CQ-AER">
+            <objects>
+                <viewController id="nCn-OQ-nL5" customClass="ResponsivenessBenchmarkController" customModule="Santa_Maria" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QqZ-97-2Ub"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eco-ga-QoD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bQO-uy-nzq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="PUQ-1M-z8K" kind="unwind" identifier="exitResponsivenessBenchmark" unwindAction="backFromResponsivenessBenchmark:" id="cgw-Ie-YIS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJX-gm-hN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PUQ-1M-z8K" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="512" y="1501"/>
         </scene>
     </scenes>
 </document>

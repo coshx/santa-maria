@@ -25,6 +25,10 @@ class LandingController: UIViewController {
             bus.register("TimeBenchmark") { _, _ in
                 self.performSegueWithIdentifier(R.segue.showTimeBenchmark, sender: self)
             }
+
+            bus.register("ResponsivenessBenchmark") { _, _ in
+                self.performSegueWithIdentifier(R.segue.showResponsivenessBenchmark, sender: self)
+            }
         })
 
         webView.scrollView.bounces = false
@@ -37,5 +41,8 @@ class LandingController: UIViewController {
     }
 
     @IBAction func backFromTimeBenchmark(segue: UIStoryboardSegue) {
+    }
+
+    @IBAction func backFromResponsivenessBenchmark(segue: UIStoryboardSegue) {
     }
 }

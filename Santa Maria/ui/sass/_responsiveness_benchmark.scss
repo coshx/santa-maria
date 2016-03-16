@@ -11,18 +11,20 @@
 
   @include keyframes(pulse) {
     0% {
-      box-shadow: 0 0 0 10px lighten($blue, 20%);
+      box-shadow: 0 0 0 10px;
     }
 
     100% {
-      box-shadow: 0 0 0 ($medium-dot * 2) lighten($blue, 20%);
+      box-shadow: 0 0 0 ($medium-dot * 2);
     }
   }
 
   .pulser {
     @include dot($blue, $medium-dot * 2);
+
     @include animation(pulse 2s ease 0s infinite alternate);
-    box-shadow: 0 0 0 10px lighten($blue, 20%);
+    color: lighten($blue, 20%);
+    box-shadow: 0 0 0 10px;
   }
 
   p, label {
@@ -69,10 +71,10 @@
 
   $v-bg: #3f9eff;
 
-  $track-h: .5rem;
+  $track-h: 1rem;
   $track-bg: #d8d8d8;
 
-  $thumb-d: 1rem;
+  $thumb-d: 1.5rem;
 
   @mixin track() {
     height: $track-h;

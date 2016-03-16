@@ -51,13 +51,6 @@ class BaseController: UIViewController {
         view.addGestureRecognizer(panDown)
     }
 
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        bus?.unregister()
-        bus = nil
-        webView = nil
-    }
-
     func onPanDown(sender: UIPanGestureRecognizer) {
         guard let segueID = exitSegueIdentifier else {
             return
@@ -66,6 +59,9 @@ class BaseController: UIViewController {
         if sender.state == .Ended {
             let distance = sender.translationInView(view).y
             if distance > 200 {
+                bus?.unregister()
+                bus = nil
+                webView = nil
                 performSegueWithIdentifier(segueID, sender: self)
             }
         }

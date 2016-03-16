@@ -2,12 +2,7 @@ import UIKit
 import WebKit
 import Caravel
 
-class TimeBenchmarkController: UIViewController {
-    private var webView: WKWebView?
-    @IBOutlet weak var navigationBar: UINavigationBar!
-
-    private var bus: EventBus?
-
+class TimeBenchmarkController: BaseController {
     private let noDataRef = NSObject()
     private var noDataBus: EventBus?
 
@@ -34,71 +29,76 @@ class TimeBenchmarkController: UIViewController {
         }
     }
 
+    override func whenBusReady() {
+        guard let bus = self.bus else {
+            return
+        }
+
+        bus.registerOnMain("StreamSize") { _, data in
+            let s = data as! Int
+
+            self.streamSize = s
+
+            if let b = self.noDataBus {
+                for i in 0 ..< s {
+                    b.register("Event-\(i)") { name, _ in
+                        b.post(name)
+                    }
+                }
+            }
+
+            if let b = self.stringBus {
+                for i in 0 ..< s {
+                    b.register("Event-\(i)") { name, rawData in
+                        let data = rawData as! String
+                        b.post(name, data: data)
+                    }
+                }
+            }
+
+            if let b = self.arrayBus {
+                for i in 0 ..< s {
+                    b.register("Event-\(i)") { name, rawData in
+                        let data = rawData as! [Int]
+                        b.post(name, data: data)
+                    }
+                }
+            }
+
+            if let b = self.dictionaryBus {
+                for i in 0 ..< s {
+                    b.register("Event-\(i)") { name, rawData in
+                        let data = rawData as! [String: AnyObject]
+                        b.post(name, data: data)
+                    }
+                }
+            }
+
+            if let b = self.complexBus {
+                for i in 0 ..< s {
+                    b.register("Event-\(i)") { name, rawData in
+                        let data = rawData as! [String: AnyObject]
+                        b.post(name, data: data)
+                    }
+                }
+            }
+
+            self.flagBusAsInit()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let config = WKWebViewConfiguration()
-        let draft = Caravel.getDraft(config)
+        loadPage("time_benchmark", busName: "TimeBenchmark", exitSegueIdentifier: R.segue.exitTimeBenchmark)
 
-        let frame = CGRect(x: 0, y: navigationBar.frame.maxY, width: view.frame.width, height: view.frame.height - navigationBar.frame.height)
-        let webView = WKWebView(frame: frame, configuration: config)
-        self.webView = webView
+        guard let config = webViewConfig else {
+            fatalError()
+        }
 
-        Caravel.get(self, name: "TimeBenchmark", wkWebView: webView, draft: draft, whenReadyOnMain: { bus in
-            self.bus = bus
-
-            bus.registerOnMain("StreamSize") { _, data in
-                let s = data as! Int
-
-                self.streamSize = s
-
-                if let b = self.noDataBus {
-                    for i in 0 ..< s {
-                        b.register("Event-\(i)") { name, _ in
-                            b.post(name)
-                        }
-                    }
-                }
-
-                if let b = self.stringBus {
-                    for i in 0 ..< s {
-                        b.register("Event-\(i)") { name, rawData in
-                            let data = rawData as! String
-                            b.post(name, data: data)
-                        }
-                    }
-                }
-
-                if let b = self.arrayBus {
-                    for i in 0 ..< s {
-                        b.register("Event-\(i)") { name, rawData in
-                            let data = rawData as! [Int]
-                            b.post(name, data: data)
-                        }
-                    }
-                }
-
-                if let b = self.dictionaryBus {
-                    for i in 0 ..< s {
-                        b.register("Event-\(i)") { name, rawData in
-                            let data = rawData as! [String: AnyObject]
-                            b.post(name, data: data)
-                        }
-                    }
-                }
-
-                if let b = self.complexBus {
-                    for i in 0 ..< s {
-                        b.register("Event-\(i)") { name, rawData in
-                            let data = rawData as! [String: AnyObject]
-                            b.post(name, data: data)
-                        }
-                    }
-                }
-
-                self.flagBusAsInit()
-            }
-        })
+        guard let webView = self.webView else {
+            fatalError()
+        }
 
         Caravel.get(noDataRef, name: "NoData", wkWebView: webView, draft: Caravel.getDraft(config), whenReadyOnMain: { bus in
             self.noDataBus = bus
@@ -173,18 +173,10 @@ class TimeBenchmarkController: UIViewController {
 
             self.flagBusAsInit()
         })
-
-        webView.scrollView.bounces = false
-        view.addSubview(webView)
-
-        webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource("time_benchmark", withExtension: "html")!))
     }
 
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-
-        bus?.unregister()
-        bus = nil
 
         self.initializedBuses = 0
         self.streamSize = nil
@@ -199,9 +191,5 @@ class TimeBenchmarkController: UIViewController {
         self.dictionaryBus = nil
         self.complexBus?.unregister()
         self.complexBus = nil
-    }
-
-    @IBAction func onBackClicked(sender: AnyObject) {
-        performSegueWithIdentifier(R.segue.exitTimeBenchmark, sender: self)
     }
 }

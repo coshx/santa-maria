@@ -4,6 +4,7 @@ import Caravel
 
 class BaseController: UIViewController {
     private(set) var webView: WKWebView?
+    private(set) var webViewConfig: WKWebViewConfiguration?
     private(set) var bus: EventBus?
 
     private var exitSegueIdentifier: String?
@@ -20,6 +21,8 @@ class BaseController: UIViewController {
 
         let config = WKWebViewConfiguration()
         let draftForMainBus = Caravel.getDraft(config)
+
+        self.webViewConfig = config
 
         let frame = CGRect(x: 0, y: 20, width: view.frame.width, height: view.frame.height - 20)
 

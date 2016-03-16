@@ -108,29 +108,9 @@
                     <view key="view" contentMode="scaleToFill" id="et2-Lx-BSg">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udd-YJ-ce3">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem id="YyF-1V-jul">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jxl-6l-HSn">
-                                            <connections>
-                                                <action selector="onBackClicked:" destination="5vp-68-vsa" id="Ex4-T7-CVc"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="udd-YJ-ce3" firstAttribute="top" secondItem="et2-Lx-BSg" secondAttribute="topMargin" id="Edr-MJ-iN5"/>
-                            <constraint firstItem="udd-YJ-ce3" firstAttribute="leading" secondItem="et2-Lx-BSg" secondAttribute="leadingMargin" constant="-20" id="ae9-E6-FV1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="udd-YJ-ce3" secondAttribute="trailing" constant="-20" id="go4-qf-Yds"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="navigationBar" destination="udd-YJ-ce3" id="m6E-Sf-Bqm"/>
                         <segue destination="ysc-Ip-8vc" kind="unwind" identifier="exitTimeBenchmark" unwindAction="backFromTimeBenchmark:" id="3vs-ht-xvN"/>
                     </connections>
                 </viewController>

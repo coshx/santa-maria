@@ -1,9 +1,6 @@
 .time-benchmark {
-  width: 100%;
-  height: 100%;
-  @include display(flex);
-  @include flex-direction(column);
-
+  @extend ._playground-wrapper;
+  
   ul {
     margin: 0;
     padding: 0;

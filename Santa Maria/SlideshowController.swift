@@ -2,8 +2,6 @@ import UIKit
 
 class SlideshowController: UIViewController, UIPageViewControllerDataSource {
 
-    @IBOutlet weak var navigationBar: UINavigationBar!
-
     private var pageViewController: UIPageViewController?
     private var pageViewContentController: PageViewContentController?
 
@@ -38,14 +36,24 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
             fatalError()
         }
 
-        let y = navigationBar.frame.maxY
-
         pageViewController.setViewControllers([page], direction: .Forward, animated: false, completion: nil)
-        pageViewController.view.frame = CGRect(x: 0, y: y, width: view.frame.size.width, height: view.frame.size.height - y)
+        pageViewController.view.frame = view.frame
         addChildViewController(pageViewController)
         view.addSubview(pageViewController.view)
         self.pageViewController = pageViewController
         pageViewController.didMoveToParentViewController(self)
+
+        let panDown = UIPanGestureRecognizer(target: self, action: "onPanDown:")
+        view.addGestureRecognizer(panDown)
+    }
+
+    func onPanDown(sender: UIPanGestureRecognizer) {
+        if sender.state == .Ended {
+            let distance = sender.translationInView(view).y
+            if distance > 200 {
+                self.performSegueWithIdentifier(R.segue.exitSlideshow, sender: self)
+            }
+        }
     }
 
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
@@ -86,9 +94,5 @@ class SlideshowController: UIViewController, UIPageViewControllerDataSource {
 
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
-    }
-
-    @IBAction func onBackClicked(sender: AnyObject) {
-        performSegueWithIdentifier(R.segue.exitSlideshow, sender: self)
     }
 }

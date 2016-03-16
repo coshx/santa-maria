@@ -16,6 +16,10 @@ class BaseController: UIViewController {
         super.viewDidLoad()
     }
 
+    func loadPage(file: String, busName: String) {
+        loadPage(file, busName: busName, exitSegueIdentifier: nil)
+    }
+
     func loadPage(file: String, busName: String, exitSegueIdentifier: String?) {
         self.exitSegueIdentifier = exitSegueIdentifier
 

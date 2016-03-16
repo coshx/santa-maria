@@ -27,6 +27,10 @@
     box-shadow: 0 0 0 10px;
   }
 
+  .settings {
+    margin: 1rem;
+  }
+
   p, label {
     &.pink {
       color: $pink;

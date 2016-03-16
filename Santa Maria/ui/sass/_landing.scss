@@ -6,26 +6,23 @@
     padding: 20px;
     box-sizing: border-box;
 
+    text-align: center;
+
     @include background(linear-gradient(0deg, #FF512F, #F09819));
 
-    h1, h2 {
-      text-align: center;
-      color: $white;
-    }
-
-    h1 {
-      margin: 0;
-      padding: 2rem 1rem 1rem 1rem;
-
-      font-size: 2rem;
-      text-shadow: 0 3px transparentize(black, .8);
-      text-transform: uppercase;
+    .logo {
+      width: 100%;
+      max-width: 250px;
+      padding: 2rem 0 1rem 0;
+      box-sizing: border-box;
     }
 
     h2 {
       margin: 0;
       padding: .5rem;
+
       font-size: 1.1rem;
+      color: $white;
     }
   }
 

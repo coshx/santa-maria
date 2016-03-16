@@ -28,6 +28,7 @@
 		A73AEFB51C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */; };
 		A73AEFB71C98719500DC34B8 /* responsiveness_benchmark.html in Resources */ = {isa = PBXBuildFile; fileRef = A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */; };
 		A73AEFB91C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */; };
+		A74C6C3C1C99234600107E74 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A74C6C3B1C99234600107E74 /* logo.png */; };
 		A75A33281C92065400D66868 /* all.css in Resources */ = {isa = PBXBuildFile; fileRef = A75A33211C92065400D66868 /* all.css */; };
 		A75A33291C92065400D66868 /* all.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33221C92065400D66868 /* all.js */; };
 		A75A332A1C92065400D66868 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = A75A33231C92065400D66868 /* jquery.min.js */; };
@@ -72,6 +73,7 @@
 		A73AEFB41C986BB900DC34B8 /* ResponsivenessBenchmarkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsivenessBenchmarkController.swift; sourceTree = "<group>"; };
 		A73AEFB61C98719500DC34B8 /* responsiveness_benchmark.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = responsiveness_benchmark.html; path = ui/build/responsiveness_benchmark.html; sourceTree = "<group>"; };
 		A73AEFB81C98916E00DC34B8 /* ResponsivenessBenchmarkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsivenessBenchmarkData.swift; sourceTree = "<group>"; };
+		A74C6C3B1C99234600107E74 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ui/build/logo.png; sourceTree = "<group>"; };
 		A75A33211C92065400D66868 /* all.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = all.css; path = ui/build/all.css; sourceTree = "<group>"; };
 		A75A33221C92065400D66868 /* all.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = all.js; path = ui/build/all.js; sourceTree = "<group>"; };
 		A75A33231C92065400D66868 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = ui/build/jquery.min.js; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 		A75A33201C92063000D66868 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A74C6C3B1C99234600107E74 /* logo.png */,
 				A75A33211C92065400D66868 /* all.css */,
 				A75A33241C92065400D66868 /* prism.css */,
 				A76177401C978C0600F4332E /* time_benchmark.html */,
@@ -264,6 +267,7 @@
 			files = (
 				A719AB531C9257F000555596 /* two_buses.html in Resources */,
 				A719AB4F1C92510800555596 /* multiple_subscribers.html in Resources */,
+				A74C6C3C1C99234600107E74 /* logo.png in Resources */,
 				A76177411C978C0600F4332E /* time_benchmark.html in Resources */,
 				A719AB5C1C93513B00555596 /* event_data.html in Resources */,
 				A75A33291C92065400D66868 /* all.js in Resources */,

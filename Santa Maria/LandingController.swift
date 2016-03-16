@@ -4,6 +4,10 @@ import Caravel
 
 class LandingController: BaseController {
 
+    override var headerColor: UIColor {
+        return UIColor(red: 240.0 / 255.0, green: 152.0 / 255.0, blue: 25.0 / 255.0, alpha: 1)
+    }
+
     override func whenBusReady() {
         guard let bus = self.bus else {
             return

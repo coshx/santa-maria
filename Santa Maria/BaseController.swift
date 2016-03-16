@@ -9,6 +9,10 @@ class BaseController: UIViewController {
 
     private var exitSegueIdentifier: String?
 
+    var headerColor: UIColor {
+        return UIColor.whiteColor()
+    }
+
     func whenBusReady() {
     }
 
@@ -41,7 +45,7 @@ class BaseController: UIViewController {
         webView.scrollView.bounces = false
         webView.backgroundColor = UIColor.clearColor()
 
-        view.backgroundColor = UIColor(red: 240.0 / 255.0, green: 152.0 / 255.0, blue: 25.0 / 255.0, alpha: 1)
+        view.backgroundColor = headerColor
         view.addSubview(webView)
 
         webView.loadRequest(NSURLRequest(URL: NSBundle.mainBundle().URLForResource(file, withExtension: "html")!))
@@ -58,7 +62,7 @@ class BaseController: UIViewController {
 
         if sender.state == .Ended {
             let distance = sender.translationInView(view).y
-            if distance > 200 {
+            if distance > 180 {
                 bus?.unregister()
                 bus = nil
                 webView = nil

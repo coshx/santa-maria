@@ -8,13 +8,15 @@ This application includes:
 * A time benchmark
 * A responsiveness benchmark
 
-![Time benchmark gif](https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/time-benchmark.gif)
+<img src="https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/time-benchmark.gif" alt="Time benchmark gif" width="250px">
 
-![Time benchmark gif](https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/1.png)
-
-![Time benchmark gif](https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/3.png)
-
-![Time benchmark gif](https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/5.png)
+<div>
+    <img src="https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/1.png" alt="First screenshot" style="display: inline-block; width: 250px">
+    
+    <img src="https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/3.png" alt="Third screenshot" style="display: inline-block; width: 250px">
+    
+    <img src="https://raw.githubusercontent.com/coshx/santa-maria/master/screenshots/5.png" alt="Fifth screenshot" style="display: inline-block; width: 250px">
+</div>
 
 ## Credits
 
